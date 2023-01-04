@@ -1,0 +1,82 @@
+{
+    "config": {
+        "map": [
+            [
+                "xxxxx",
+                "x.S.x",
+                "x.x.x",
+                "x.x.x",
+                "x.x.x",
+                "x.x.x",
+                "x.B.x",
+                "xxxxx"
+            ],
+            [
+                "xxxxxxxxxxx", 
+                "xS.......Sx",
+                "x.x.x.x.x.x",
+                "xS..H.....x",
+                "x.x.x.x.x.x",
+                "x.........x",
+                "x.x.x.x.x.x",
+                "x.........x",
+                "x.x.x.x.x.x",
+                "x.........x",
+                "x.x.x.x.x.x",
+                "x.........x",
+                "x.x.x.x.x.x",
+                "xSV.......x",
+                "xxxxxxxxxxx"
+            ],
+            [
+                "xxxxxxxxxxxxxxxxxxxxxxx",
+                "xSx.......x...........x",
+                "x.........x..xxxxxxx..x",
+                "x...H.....x..x.....x..x",
+                "x..................x..x",
+                "x.........x..x.....x..x",
+                "x.....x...x..x.....x..x",
+                "x.....x.x.x..x...w.x..x",
+                "x.....x....S.....xxx..x",
+                "x.....x..........x....x",
+                "x.....x.....S....x....x",
+                "x.....x...x......x....x",
+                "x...S......x..........x",
+                "x.V..............x....x",
+                "xxxxxxxxxxxxxxxxxxxxxxx"
+            ]
+        ],
+        "Entity": {
+            "Heal": 1,
+            "Speed": 20,
+            "Max_Item": 1
+        },
+        "Item": {
+            "Boom": {
+                "Explosion_size": 4,
+                "Time_Beafore_explose": 5
+            },
+            "Speed": {
+                "Add_Speed": 5,
+                "During": 3.2
+            }
+        },
+        "Help map": {
+            "S": "Spawn des jouers",
+            "s": "Spawn d'un jour qui spanw direct sur une boom",
+            "B": "Boom",
+            "H": "Heal",
+            "V": "bost Speed"
+        }
+    },
+    "Texture": [
+        "N0",
+        "assets/grass.png",
+        "assets/rock.png",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6"
+    ]
+}
