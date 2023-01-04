@@ -1,0 +1,7 @@
+pour tester bouton et text | g++ main.cpp -lsfml-graphics -lsfml-window -lsfml-system
+./a.out
+
+
+pour tester degree.cpp | g++ degree.cpp -lsfml-graphics -lsfml-window -lsfml-system
+./a.out
+ligne 142 et 143 pour modifier la velocité et l'angle

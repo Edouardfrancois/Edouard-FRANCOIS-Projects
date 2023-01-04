@@ -1,0 +1,9 @@
+digraph "/home/Edouard/TEK3/C++/B-CPP-500-PAR-5-1-rtype-pierre.tran/src/shared/ecs/SFML/GpuPreference.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/Edouard/TEK3\l/C++/B-CPP-500-PAR-5\l-1-rtype-pierre.tran\l/src/shared/ecs/SFML/GpuPreference.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Headers."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SFML/Config.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_config_8hpp_source.html",tooltip=" "];
+}

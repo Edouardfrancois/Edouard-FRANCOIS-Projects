@@ -1,0 +1,67 @@
+\hypertarget{class_main_lobby}{}\doxysection{Main\+Lobby Class Reference}
+\label{class_main_lobby}\index{MainLobby@{MainLobby}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_lobby_a859fc2fb03092f78cf329f9ba6ec4f42}{Main\+Lobby}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&Main\+Lobby\+Queue, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&\mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}, uuid\+\_\+t \&Main\+Lobby\+Uuid)
+\begin{DoxyCompactList}\small\item\em Construct a new Main \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_lobby_a17efcfc5a92f915c78c14c8f675fb85c}\label{class_main_lobby_a17efcfc5a92f915c78c14c8f675fb85c}} 
+\mbox{\hyperlink{class_main_lobby_a17efcfc5a92f915c78c14c8f675fb85c}{$\sim$\+Main\+Lobby}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Main \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_lobby_aab47d552807b6e13db886b41c9428f5e}\label{class_main_lobby_aab47d552807b6e13db886b41c9428f5e}} 
+void \mbox{\hyperlink{class_main_lobby_aab47d552807b6e13db886b41c9428f5e}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Run the Main \mbox{\hyperlink{class_lobby}{Lobby}} and manage when a lobby is destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$ \mbox{\hyperlink{class_main_lobby_a9cfc151178494e57add65bc353c1792b}{Get\+Packet\+On\+Queue}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ queue)
+\begin{DoxyCompactList}\small\item\em Get the Packet On Queue object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_lobby_a859fc2fb03092f78cf329f9ba6ec4f42}\label{class_main_lobby_a859fc2fb03092f78cf329f9ba6ec4f42}} 
+\index{MainLobby@{MainLobby}!MainLobby@{MainLobby}}
+\index{MainLobby@{MainLobby}!MainLobby@{MainLobby}}
+\doxysubsubsection{\texorpdfstring{MainLobby()}{MainLobby()}}
+{\footnotesize\ttfamily Main\+Lobby\+::\+Main\+Lobby (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&}]{Main\+Lobby\+Queue,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&}]{Handle\+Uuid,  }\item[{uuid\+\_\+t \&}]{Main\+Lobby\+Uuid }\end{DoxyParamCaption})}
+
+
+
+Construct a new Main \mbox{\hyperlink{class_lobby}{Lobby}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Main\+Lobby\+Queue} & \\
+\hline
+{\em \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}} & \\
+\hline
+{\em Main\+Lobby\+Uuid} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_lobby_a9cfc151178494e57add65bc353c1792b}\label{class_main_lobby_a9cfc151178494e57add65bc353c1792b}} 
+\index{MainLobby@{MainLobby}!GetPacketOnQueue@{GetPacketOnQueue}}
+\index{GetPacketOnQueue@{GetPacketOnQueue}!MainLobby@{MainLobby}}
+\doxysubsubsection{\texorpdfstring{GetPacketOnQueue()}{GetPacketOnQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$ Main\+Lobby\+::\+Get\+Packet\+On\+Queue (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Packet On Queue object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+One\+Packet\+Queue$<$packet\+\_\+t$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/server/include/Main\+Lobby.\+hpp\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/server/src/Main\+Lobby.\+cpp\end{DoxyCompactItemize}

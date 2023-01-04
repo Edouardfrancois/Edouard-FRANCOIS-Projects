@@ -1,0 +1,10 @@
+<map id="button_s" name="button_s">
+<area shape="rect" id="node1" title=" " alt="" coords="82,361,160,388"/>
+<area shape="rect" id="node2" href="$structdrawable__s.html" title=" " alt="" coords="73,272,169,299"/>
+<area shape="rect" id="node3" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="48,171,167,197"/>
+<area shape="rect" id="node4" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="67,81,148,108"/>
+<area shape="rect" id="node5" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="28,5,131,32"/>
+<area shape="rect" id="node8" href="$classsf_1_1_sprite.html" title="Drawable representation of a texture, with its own transformations, color, etc." alt="" coords="178,81,256,108"/>
+<area shape="rect" id="node6" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="155,5,290,32"/>
+<area shape="rect" id="node7" href="$structsprite__s.html" title="Contains a sprite and a shared to the texture." alt="" coords="180,221,254,248"/>
+</map>

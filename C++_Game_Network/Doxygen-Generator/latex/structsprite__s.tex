@@ -1,0 +1,100 @@
+\hypertarget{structsprite__s}{}\doxysection{sprite\+\_\+s Struct Reference}
+\label{structsprite__s}\index{sprite\_s@{sprite\_s}}
+
+
+Contains a sprite and a shared to the texture.  
+
+
+
+
+{\ttfamily \#include $<$components.\+hpp$>$}
+
+
+
+Collaboration diagram for sprite\+\_\+s\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsprite__s_ae256731f632542b7cc3e0af4f46384bf}\label{structsprite__s_ae256731f632542b7cc3e0af4f46384bf}} 
+{\bfseries sprite\+\_\+s} (\mbox{\hyperlink{class_manage___asset}{Manage\+\_\+\+Asset}} \&man, std\+::string src)
+\item 
+void \mbox{\hyperlink{structsprite__s_a0fd805069186b0d9a3f8147e68266e96}{setup\+Anime}} (\mbox{\hyperlink{structposition__s}{position\+\_\+t}} top\+Left, \mbox{\hyperlink{structposition__s}{position\+\_\+t}} bottom\+Right, int stepX, int stepY, int nb\+\_\+frame)
+\begin{DoxyCompactList}\small\item\em sets up the animation path on the texture will go left to right then bottom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structsprite__s_a3d6963ca7a2f83cb34ce47b3b8c3d958}\label{structsprite__s_a3d6963ca7a2f83cb34ce47b3b8c3d958}} 
+void \mbox{\hyperlink{structsprite__s_a3d6963ca7a2f83cb34ce47b3b8c3d958}{animate}} ()
+\begin{DoxyCompactList}\small\item\em animates the sprite, to be called before each draw \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsprite__s_aa4f07e418a0d059ae3bb9885ea96ec97}{get\+Is\+Animated}} () const
+\begin{DoxyCompactList}\small\item\em returns true if the sprite is animated \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsprite__s_a527669b9e9ce5c03ef0d080c8241f8c2}{get\+Is\+Valid}} () const
+\begin{DoxyCompactList}\small\item\em returns true if the sprite is valid \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsprite__s_a64f35a0928a706f16f9e83039d735635}\label{structsprite__s_a64f35a0928a706f16f9e83039d735635}} 
+\mbox{\hyperlink{classsf_1_1_sprite}{sf\+::\+Sprite}} {\bfseries sprite}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains a sprite and a shared to the texture. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structsprite__s_aa4f07e418a0d059ae3bb9885ea96ec97}\label{structsprite__s_aa4f07e418a0d059ae3bb9885ea96ec97}} 
+\index{sprite\_s@{sprite\_s}!getIsAnimated@{getIsAnimated}}
+\index{getIsAnimated@{getIsAnimated}!sprite\_s@{sprite\_s}}
+\doxysubsubsection{\texorpdfstring{getIsAnimated()}{getIsAnimated()}}
+{\footnotesize\ttfamily bool sprite\+\_\+s\+::get\+Is\+Animated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns true if the sprite is animated 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structsprite__s_a527669b9e9ce5c03ef0d080c8241f8c2}\label{structsprite__s_a527669b9e9ce5c03ef0d080c8241f8c2}} 
+\index{sprite\_s@{sprite\_s}!getIsValid@{getIsValid}}
+\index{getIsValid@{getIsValid}!sprite\_s@{sprite\_s}}
+\doxysubsubsection{\texorpdfstring{getIsValid()}{getIsValid()}}
+{\footnotesize\ttfamily bool sprite\+\_\+s\+::get\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns true if the sprite is valid 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structsprite__s_a0fd805069186b0d9a3f8147e68266e96}\label{structsprite__s_a0fd805069186b0d9a3f8147e68266e96}} 
+\index{sprite\_s@{sprite\_s}!setupAnime@{setupAnime}}
+\index{setupAnime@{setupAnime}!sprite\_s@{sprite\_s}}
+\doxysubsubsection{\texorpdfstring{setupAnime()}{setupAnime()}}
+{\footnotesize\ttfamily void sprite\+\_\+s\+::setup\+Anime (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structposition__s}{position\+\_\+t}}}]{top\+Left,  }\item[{\mbox{\hyperlink{structposition__s}{position\+\_\+t}}}]{bottom\+Right,  }\item[{int}]{stepX,  }\item[{int}]{stepY,  }\item[{int}]{nb\+\_\+frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets up the animation path on the texture will go left to right then bottom 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Left} & top left point of your texture rectangle \\
+\hline
+{\em bottom\+Right} & bottome right of your texture rectangle \\
+\hline
+{\em stepX} & for every iteration how much should the texture rectangle move to the right \\
+\hline
+{\em stepY} & when it reached the rightest point of the texture how much should the texture rectangle go down \\
+\hline
+{\em nb\+\_\+frame} & the totale number of frames your animation should have. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/\+SFML/components.\+hpp\end{DoxyCompactItemize}

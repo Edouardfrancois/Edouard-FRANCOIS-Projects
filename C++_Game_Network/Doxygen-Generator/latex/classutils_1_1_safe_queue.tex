@@ -1,0 +1,94 @@
+\hypertarget{classutils_1_1_safe_queue}{}\doxysection{utils\+::Safe\+Queue$<$ bill $>$ Class Template Reference}
+\label{classutils_1_1_safe_queue}\index{utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classutils_1_1_safe_queue_acc0a01ac9cf23219b2ea9903b4b14ff4}{try\+\_\+pop}} (bill \&task)
+\begin{DoxyCompactList}\small\item\em try to pop an element safely; can be safely used with threads \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classutils_1_1_safe_queue_aa0ed46a0ec2d6f9fd570fc26f9f68a83}{add}} (bill \&task)
+\begin{DoxyCompactList}\small\item\em puts a reference to task in the queue can be used with thread safely \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutils_1_1_safe_queue_aa701516e6d1ca9544244c910256d2101}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Get the Size object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classutils_1_1_safe_queue_a24d4dc4c5df689766ac784e52ad8e8fc}{is\+\_\+empty}} ()
+\begin{DoxyCompactList}\small\item\em Is Empty Queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classutils_1_1_safe_queue_af01ab25e9851541fbea34498159a4f18}\label{classutils_1_1_safe_queue_af01ab25e9851541fbea34498159a4f18}} 
+void \mbox{\hyperlink{classutils_1_1_safe_queue_af01ab25e9851541fbea34498159a4f18}{Clear\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Clear the Queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classutils_1_1_safe_queue_acc7764780f196dbba7348c814eb725fd}\label{classutils_1_1_safe_queue_acc7764780f196dbba7348c814eb725fd}} 
+std\+::vector$<$ bill $>$ {\bfseries preview} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classutils_1_1_safe_queue_aa0ed46a0ec2d6f9fd570fc26f9f68a83}\label{classutils_1_1_safe_queue_aa0ed46a0ec2d6f9fd570fc26f9f68a83}} 
+\index{utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}!add@{add}}
+\index{add@{add}!utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename bill $>$ \\
+void \mbox{\hyperlink{classutils_1_1_safe_queue}{utils\+::\+Safe\+Queue}}$<$ bill $>$\+::add (\begin{DoxyParamCaption}\item[{bill \&}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+puts a reference to task in the queue can be used with thread safely 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classutils_1_1_safe_queue_aa701516e6d1ca9544244c910256d2101}\label{classutils_1_1_safe_queue_aa701516e6d1ca9544244c910256d2101}} 
+\index{utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily template$<$typename bill $>$ \\
+int \mbox{\hyperlink{classutils_1_1_safe_queue}{utils\+::\+Safe\+Queue}}$<$ bill $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Size object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classutils_1_1_safe_queue_a24d4dc4c5df689766ac784e52ad8e8fc}\label{classutils_1_1_safe_queue_a24d4dc4c5df689766ac784e52ad8e8fc}} 
+\index{utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$typename bill $>$ \\
+bool \mbox{\hyperlink{classutils_1_1_safe_queue}{utils\+::\+Safe\+Queue}}$<$ bill $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is Empty Queue. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classutils_1_1_safe_queue_acc0a01ac9cf23219b2ea9903b4b14ff4}\label{classutils_1_1_safe_queue_acc0a01ac9cf23219b2ea9903b4b14ff4}} 
+\index{utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}!try\_pop@{try\_pop}}
+\index{try\_pop@{try\_pop}!utils::SafeQueue$<$ bill $>$@{utils::SafeQueue$<$ bill $>$}}
+\doxysubsubsection{\texorpdfstring{try\_pop()}{try\_pop()}}
+{\footnotesize\ttfamily template$<$typename bill $>$ \\
+bool \mbox{\hyperlink{classutils_1_1_safe_queue}{utils\+::\+Safe\+Queue}}$<$ bill $>$\+::try\+\_\+pop (\begin{DoxyParamCaption}\item[{bill \&}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+try to pop an element safely; can be safely used with threads 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & puts the popped value in task \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if popped 
+
+false if failed to pop 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/\+Thread\+Pool/utils/Safe\+Queue.\+hpp\end{DoxyCompactItemize}

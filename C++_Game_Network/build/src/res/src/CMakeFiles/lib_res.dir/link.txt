@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wall -W -ansi -pedantic -g -O3 -DNDEBUG -shared -Wl,-soname,liblib_res.so -o liblib_res.so CMakeFiles/lib_res.dir/interface/ISocket.cpp.o CMakeFiles/lib_res.dir/Client.cpp.o CMakeFiles/lib_res.dir/Serveur.cpp.o 

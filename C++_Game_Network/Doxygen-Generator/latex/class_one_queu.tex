@@ -1,0 +1,444 @@
+\hypertarget{class_one_queu}{}\doxysection{One\+Queu$<$ Data\+Type $>$ Class Template Reference}
+\label{class_one_queu}\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+
+
+{\ttfamily \#include $<$Handle\+Uuid.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_one_queu_af9782225de3c29d5b46352bf7fa16662}{One\+Queu}} (uuid\+\_\+t Uuid\+Of\+Lobby)
+\begin{DoxyCompactList}\small\item\em Construct a new One Queu object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_one_queu_af1d0eb5d81512224d63321b004f775e8}\label{class_one_queu_af1d0eb5d81512224d63321b004f775e8}} 
+\mbox{\hyperlink{class_one_queu_af1d0eb5d81512224d63321b004f775e8}{$\sim$\+One\+Queu}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the One Queu object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_one_queu_a442980dc104ee19616dc90edca37fc16}{Is\+Uuid\+In\+This\+Queue}} (const uuid\+\_\+t \&uuid, const struct sockaddr\+\_\+in \&addr) const
+\begin{DoxyCompactList}\small\item\em check if this uuid is in this queue \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_uuid}{Uuid}} \& \mbox{\hyperlink{class_one_queu_a619051a4c4e8910d1090cd8d867ae4b6}{Get\+Uuid\+By\+UuidT}} (const uuid\+\_\+t \&uuid)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_uuid}{Uuid}} By \mbox{\hyperlink{class_uuid}{Uuid}} T object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_a95087fd827c7887ee8a666e3d91efc4e}{Put\+Data\+On\+Queue\+If\+Uuid\+Thread\+Is\+Egal}} (Data\+Type \&p, const uuid\+\_\+t \&uuid, \mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&e)
+\begin{DoxyCompactList}\small\item\em Put data on the queue if the uuid usr is on this queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a9f45c82c21d9519708ce641368c7e487}{Put\+Data\+That\+Queu}} (Data\+Type \&p, \mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&e)
+\begin{DoxyCompactList}\small\item\em Force the packet to put it on this queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a8f42ccbd0d87d8c8dacf8134140d0a1d}{Generate\+New\+Uuid\+Usr}} (uuid\+\_\+t \&new\+\_\+uuid, const struct sockaddr\+\_\+in \&addr)
+\begin{DoxyCompactList}\small\item\em assigne a uuid usr to that queue \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_a14909cc2efd104114e85cf4fc0db0a6f}{Is\+Queue\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Check if this queue is empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_a013c28172d53d51e964cf98bddda69f1}{Get\+On\+Queu}} (\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&Packet)
+\begin{DoxyCompactList}\small\item\em Get the On Queu object Try to pop the Data\+Type on that queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_ac0ede453d45b45cd307d46f24a9cf894}{Is\+Use}} ()
+\begin{DoxyCompactList}\small\item\em Say if this queue is use by a lobby/game/thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_one_queu_a747b63b840376074459dd5f0a0f722da}\label{class_one_queu_a747b63b840376074459dd5f0a0f722da}} 
+void \mbox{\hyperlink{class_one_queu_a747b63b840376074459dd5f0a0f722da}{Activate\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Active the queue for a thread. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_a6d1839e3c21d6523282dbea3177f20d4}{Remouve\+That\+Usr\+From\+This\+Queue}} (const uuid\+\_\+t \&To\+Remove)
+\begin{DoxyCompactList}\small\item\em Remove that user from this queu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a654862060dbc083074f4869790dfab9f}{Add\+That\+Usr\+To\+This\+Queue}} (uuid\+\_\+t \&Urs\+Uuid, const struct sockaddr\+\_\+in \&addr, bool Lock)
+\begin{DoxyCompactList}\small\item\em Add Usr\+Uuid to that queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a11fbfa2c716dc63ea916d39e96dc2327}{Send\+Packet\+To\+One\+Usr}} (\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P)
+\begin{DoxyCompactList}\small\item\em Send A packet to One user using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_one_queu_a4c6d6cc8e8093b4efd67fdb7e76a30fa}{Send\+Packet\+By\+Uuid}} (int Socket\+Serv, uuid\+\_\+t \&Sender\+Uuid, Data\+Type \&P)
+\begin{DoxyCompactList}\small\item\em Send A packet to One user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_ad6c4c6effe29278fca584fd82c8cdd6d}{Send\+Packet\+To\+Sender}} (\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P, Data\+Type \&To\+Send)
+\begin{DoxyCompactList}\small\item\em Send a New packet to the sender. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a85833802e6bfb5d2919c11bdd94b7f87}{Send\+Packet\+To\+All\+Usr}} (int Serv\+Socket, const Data\+Type \&P)
+\begin{DoxyCompactList}\small\item\em Send to all usr in this queue a packet. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_one_queu_a4c059b330f104de6cf3a4dbc002cd590}{Get\+Number\+Of\+Usr}} ()
+\begin{DoxyCompactList}\small\item\em Get the Number Of Usr object. \end{DoxyCompactList}\item 
+const uuid\+\_\+t \& \mbox{\hyperlink{class_one_queu_a41d2377ac8af2b7ef88289cd58dd3726}{Get\+Uuid\+Of\+Lobby}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_uuid}{Uuid}} Of \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_one_queu_a4dd4eed787dcfb7ec739fa0786c6f740}\label{class_one_queu_a4dd4eed787dcfb7ec739fa0786c6f740}} 
+void \mbox{\hyperlink{class_one_queu_a4dd4eed787dcfb7ec739fa0786c6f740}{Desactive\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Desactive the queue, the queue can be use by other thread. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_uuid}{Uuid}} $>$ \& \mbox{\hyperlink{class_one_queu_af18ebd2e2483e18f36b6a3d0f8a66c2f}{Get\+All\+Usr}} ()
+\begin{DoxyCompactList}\small\item\em Get the All Usr object. \end{DoxyCompactList}\item 
+std\+::mutex $\ast$ \mbox{\hyperlink{class_one_queu_a20140b9a571b10932ced749ead2e105b}{Get\+Mutex\+To\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Get the Mutex To Lock out of this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_one_queu_a1f271cef4f06de846e7b72b8059efd47}{Update\+Uuid\+Of\+Queue}} (const uuid\+\_\+t \&New\+Uuid)
+\begin{DoxyCompactList}\small\item\em Update \mbox{\hyperlink{class_uuid}{Uuid}} of this Queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_one_queu_ae16d515533189a60cc46f3301c3c4cd6}\label{class_one_queu_ae16d515533189a60cc46f3301c3c4cd6}} 
+std\+::mutex {\bfseries Mutex\+Cv}
+\item 
+\mbox{\Hypertarget{class_one_queu_a2b4c840cb319e4ccffe2bd108803d290}\label{class_one_queu_a2b4c840cb319e4ccffe2bd108803d290}} 
+std\+::shared\+\_\+ptr$<$ std\+::condition\+\_\+variable $>$ {\bfseries Cv}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Data\+Type$>$\newline
+class One\+Queu$<$ Data\+Type $>$}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Data\+Type} & the type of the packet \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_one_queu_af9782225de3c29d5b46352bf7fa16662}\label{class_one_queu_af9782225de3c29d5b46352bf7fa16662}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!OneQueu@{OneQueu}}
+\index{OneQueu@{OneQueu}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{OneQueu()}{OneQueu()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+\mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::\mbox{\hyperlink{class_one_queu}{One\+Queu}} (\begin{DoxyParamCaption}\item[{uuid\+\_\+t}]{Uuid\+Of\+Lobby }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new One Queu object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Uuid\+Of\+Lobby} & the uuid of the lobby \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_one_queu_a654862060dbc083074f4869790dfab9f}\label{class_one_queu_a654862060dbc083074f4869790dfab9f}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!AddThatUsrToThisQueue@{AddThatUsrToThisQueue}}
+\index{AddThatUsrToThisQueue@{AddThatUsrToThisQueue}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{AddThatUsrToThisQueue()}{AddThatUsrToThisQueue()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Add\+That\+Usr\+To\+This\+Queue (\begin{DoxyParamCaption}\item[{uuid\+\_\+t \&}]{Urs\+Uuid,  }\item[{const struct sockaddr\+\_\+in \&}]{addr,  }\item[{bool}]{Lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add Usr\+Uuid to that queue. 
+
+Do We Have To lock the mutex
+
+
+\begin{DoxyParams}{Parameters}
+{\em Urs\+Uuid} & \\
+\hline
+{\em addr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_a8f42ccbd0d87d8c8dacf8134140d0a1d}\label{class_one_queu_a8f42ccbd0d87d8c8dacf8134140d0a1d}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GenerateNewUuidUsr@{GenerateNewUuidUsr}}
+\index{GenerateNewUuidUsr@{GenerateNewUuidUsr}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GenerateNewUuidUsr()}{GenerateNewUuidUsr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Generate\+New\+Uuid\+Usr (\begin{DoxyParamCaption}\item[{uuid\+\_\+t \&}]{new\+\_\+uuid,  }\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+assigne a uuid usr to that queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+uuid} & new uuid \\
+\hline
+{\em addr} & addrclient struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_af18ebd2e2483e18f36b6a3d0f8a66c2f}\label{class_one_queu_af18ebd2e2483e18f36b6a3d0f8a66c2f}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetAllUsr@{GetAllUsr}}
+\index{GetAllUsr@{GetAllUsr}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetAllUsr()}{GetAllUsr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::vector$<$\mbox{\hyperlink{class_uuid}{Uuid}}$>$\& \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+All\+Usr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the All Usr object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Uuid$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a20140b9a571b10932ced749ead2e105b}\label{class_one_queu_a20140b9a571b10932ced749ead2e105b}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetMutexToLock@{GetMutexToLock}}
+\index{GetMutexToLock@{GetMutexToLock}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetMutexToLock()}{GetMutexToLock()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::mutex$\ast$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+Mutex\+To\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Mutex To Lock out of this object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::mutex$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a4c059b330f104de6cf3a4dbc002cd590}\label{class_one_queu_a4c059b330f104de6cf3a4dbc002cd590}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetNumberOfUsr@{GetNumberOfUsr}}
+\index{GetNumberOfUsr@{GetNumberOfUsr}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfUsr()}{GetNumberOfUsr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+Number\+Of\+Usr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Number Of Usr object. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a013c28172d53d51e964cf98bddda69f1}\label{class_one_queu_a013c28172d53d51e964cf98bddda69f1}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetOnQueu@{GetOnQueu}}
+\index{GetOnQueu@{GetOnQueu}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetOnQueu()}{GetOnQueu()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+On\+Queu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{Packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the On Queu object Try to pop the Data\+Type on that queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Packet} & the data to pop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true a elem was pop 
+
+false nofink was pop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a619051a4c4e8910d1090cd8d867ae4b6}\label{class_one_queu_a619051a4c4e8910d1090cd8d867ae4b6}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetUuidByUuidT@{GetUuidByUuidT}}
+\index{GetUuidByUuidT@{GetUuidByUuidT}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetUuidByUuidT()}{GetUuidByUuidT()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+\mbox{\hyperlink{class_uuid}{Uuid}}\& \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+Uuid\+By\+UuidT (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{uuid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{class_uuid}{Uuid}} By \mbox{\hyperlink{class_uuid}{Uuid}} T object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & the uuid od the usr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_uuid}{Uuid}}\& the \mbox{\hyperlink{class_uuid}{Uuid}} class object of the uuid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a41d2377ac8af2b7ef88289cd58dd3726}\label{class_one_queu_a41d2377ac8af2b7ef88289cd58dd3726}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!GetUuidOfLobby@{GetUuidOfLobby}}
+\index{GetUuidOfLobby@{GetUuidOfLobby}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetUuidOfLobby()}{GetUuidOfLobby()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+const uuid\+\_\+t\& \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Get\+Uuid\+Of\+Lobby (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \mbox{\hyperlink{class_uuid}{Uuid}} Of \mbox{\hyperlink{class_lobby}{Lobby}} object. 
+
+\begin{DoxyReturn}{Returns}
+const uuid\+\_\+t\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a14909cc2efd104114e85cf4fc0db0a6f}\label{class_one_queu_a14909cc2efd104114e85cf4fc0db0a6f}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!IsQueueEmpty@{IsQueueEmpty}}
+\index{IsQueueEmpty@{IsQueueEmpty}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{IsQueueEmpty()}{IsQueueEmpty()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Is\+Queue\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if this queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+true is empty 
+
+false is not empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_ac0ede453d45b45cd307d46f24a9cf894}\label{class_one_queu_ac0ede453d45b45cd307d46f24a9cf894}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!IsUse@{IsUse}}
+\index{IsUse@{IsUse}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{IsUse()}{IsUse()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Is\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Say if this queue is use by a lobby/game/thread. 
+
+\begin{DoxyReturn}{Returns}
+true is use 
+
+false is not use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a442980dc104ee19616dc90edca37fc16}\label{class_one_queu_a442980dc104ee19616dc90edca37fc16}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!IsUuidInThisQueue@{IsUuidInThisQueue}}
+\index{IsUuidInThisQueue@{IsUuidInThisQueue}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{IsUuidInThisQueue()}{IsUuidInThisQueue()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+int \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Is\+Uuid\+In\+This\+Queue (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{uuid,  }\item[{const struct sockaddr\+\_\+in \&}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check if this uuid is in this queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & the uuid the the usr \\
+\hline
+{\em addr} & the addr struct if the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$>$=1 find wive addr and usr is in this queue 
+
+-\/1 find wive the uuid and usr is in this queue 
+
+0 not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a95087fd827c7887ee8a666e3d91efc4e}\label{class_one_queu_a95087fd827c7887ee8a666e3d91efc4e}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!PutDataOnQueueIfUuidThreadIsEgal@{PutDataOnQueueIfUuidThreadIsEgal}}
+\index{PutDataOnQueueIfUuidThreadIsEgal@{PutDataOnQueueIfUuidThreadIsEgal}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{PutDataOnQueueIfUuidThreadIsEgal()}{PutDataOnQueueIfUuidThreadIsEgal()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Put\+Data\+On\+Queue\+If\+Uuid\+Thread\+Is\+Egal (\begin{DoxyParamCaption}\item[{Data\+Type \&}]{p,  }\item[{const uuid\+\_\+t \&}]{uuid,  }\item[{\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Put data on the queue if the uuid usr is on this queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the data to put \\
+\hline
+{\em uuid} & the uuid of the usr \\
+\hline
+{\em e} & the socket event struct of the client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true the data is put 
+
+false the use is not on this queue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a9f45c82c21d9519708ce641368c7e487}\label{class_one_queu_a9f45c82c21d9519708ce641368c7e487}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!PutDataThatQueu@{PutDataThatQueu}}
+\index{PutDataThatQueu@{PutDataThatQueu}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{PutDataThatQueu()}{PutDataThatQueu()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Put\+Data\+That\+Queu (\begin{DoxyParamCaption}\item[{Data\+Type \&}]{p,  }\item[{\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Force the packet to put it on this queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the packet \\
+\hline
+{\em e} & the socket struct event of the sender \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_a6d1839e3c21d6523282dbea3177f20d4}\label{class_one_queu_a6d1839e3c21d6523282dbea3177f20d4}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!RemouveThatUsrFromThisQueue@{RemouveThatUsrFromThisQueue}}
+\index{RemouveThatUsrFromThisQueue@{RemouveThatUsrFromThisQueue}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{RemouveThatUsrFromThisQueue()}{RemouveThatUsrFromThisQueue()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Remouve\+That\+Usr\+From\+This\+Queue (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{To\+Remove }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove that user from this queu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em To\+Remove} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_one_queu_a4c6d6cc8e8093b4efd67fdb7e76a30fa}\label{class_one_queu_a4c6d6cc8e8093b4efd67fdb7e76a30fa}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!SendPacketByUuid@{SendPacketByUuid}}
+\index{SendPacketByUuid@{SendPacketByUuid}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacketByUuid()}{SendPacketByUuid()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Send\+Packet\+By\+Uuid (\begin{DoxyParamCaption}\item[{int}]{Socket\+Serv,  }\item[{uuid\+\_\+t \&}]{Sender\+Uuid,  }\item[{Data\+Type \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send A packet to One user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_a85833802e6bfb5d2919c11bdd94b7f87}\label{class_one_queu_a85833802e6bfb5d2919c11bdd94b7f87}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!SendPacketToAllUsr@{SendPacketToAllUsr}}
+\index{SendPacketToAllUsr@{SendPacketToAllUsr}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacketToAllUsr()}{SendPacketToAllUsr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Send\+Packet\+To\+All\+Usr (\begin{DoxyParamCaption}\item[{int}]{Serv\+Socket,  }\item[{const Data\+Type \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send to all usr in this queue a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Serv\+Socket} & socket of the server \\
+\hline
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_a11fbfa2c716dc63ea916d39e96dc2327}\label{class_one_queu_a11fbfa2c716dc63ea916d39e96dc2327}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!SendPacketToOneUsr@{SendPacketToOneUsr}}
+\index{SendPacketToOneUsr@{SendPacketToOneUsr}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacketToOneUsr()}{SendPacketToOneUsr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Send\+Packet\+To\+One\+Usr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send A packet to One user using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_ad6c4c6effe29278fca584fd82c8cdd6d}\label{class_one_queu_ad6c4c6effe29278fca584fd82c8cdd6d}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!SendPacketToSender@{SendPacketToSender}}
+\index{SendPacketToSender@{SendPacketToSender}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacketToSender()}{SendPacketToSender()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Send\+Packet\+To\+Sender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P,  }\item[{Data\+Type \&}]{To\+Send }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a New packet to the sender. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+{\em To\+Send} & The New packet to send \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_one_queu_a1f271cef4f06de846e7b72b8059efd47}\label{class_one_queu_a1f271cef4f06de846e7b72b8059efd47}} 
+\index{OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}!UpdateUuidOfQueue@{UpdateUuidOfQueue}}
+\index{UpdateUuidOfQueue@{UpdateUuidOfQueue}!OneQueu$<$ DataType $>$@{OneQueu$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{UpdateUuidOfQueue()}{UpdateUuidOfQueue()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$\+::Update\+Uuid\+Of\+Queue (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{New\+Uuid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update \mbox{\hyperlink{class_uuid}{Uuid}} of this Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Uuid} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/Handle\+Uuid.\+hpp\end{DoxyCompactItemize}

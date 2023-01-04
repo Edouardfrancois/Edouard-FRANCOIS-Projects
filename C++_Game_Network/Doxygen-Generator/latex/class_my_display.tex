@@ -1,0 +1,72 @@
+\hypertarget{class_my_display}{}\doxysection{My\+Display Class Reference}
+\label{class_my_display}\index{MyDisplay@{MyDisplay}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ input\+\_\+key $>$ \& \mbox{\hyperlink{class_my_display_ab9620fdaa04fc2a42378b13c881a94c9}{event\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em return a queue of all the key pressed event \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_display_a3e708158009f74b93d08296f5ea957f8}\label{class_my_display_a3e708158009f74b93d08296f5ea957f8}} 
+void \mbox{\hyperlink{class_my_display_a3e708158009f74b93d08296f5ea957f8}{clear\+Event\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em clear the queue of event \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_display_ab589a701c305651d27038bfd4bd298b4}\label{class_my_display_ab589a701c305651d27038bfd4bd298b4}} 
+input\+\_\+key {\bfseries keycatch} ()
+\item 
+\mbox{\Hypertarget{class_my_display_aeb3440cd5f329342671a0b38e13f9adb}\label{class_my_display_aeb3440cd5f329342671a0b38e13f9adb}} 
+std\+::queue$<$ input\+\_\+key $>$ \& {\bfseries get\+\_\+input\+Queue} ()
+\item 
+\mbox{\Hypertarget{class_my_display_aa922541fb945f3258c89b5ffc299bf9d}\label{class_my_display_aa922541fb945f3258c89b5ffc299bf9d}} 
+{\bfseries My\+Display} (int x, int y, double fps)
+\item 
+\mbox{\Hypertarget{class_my_display_a73db44bbabe61a3a85a6c95c77405ef7}\label{class_my_display_a73db44bbabe61a3a85a6c95c77405ef7}} 
+bool {\bfseries win\+\_\+is\+\_\+open} () const
+\item 
+void \mbox{\hyperlink{class_my_display_a23aff4f6b5abdcb4c72b7fc58a9cf02f}{ite}} (\mbox{\hyperlink{classregistry}{registry}} \&\+\_\+regis)
+\begin{DoxyCompactList}\small\item\em takes a registry, and draws, iteration by iteration any object that are to be drawn should pocess at least\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_display_ad42205e754e72654e118d33082a4f707}\label{class_my_display_ad42205e754e72654e118d33082a4f707}} 
+size\+\_\+t {\bfseries button\+Pressed} (\mbox{\hyperlink{classregistry}{registry}} \&\+\_\+regis)
+\item 
+\mbox{\Hypertarget{class_my_display_a39ab6b267604f9442543647fd4780a46}\label{class_my_display_a39ab6b267604f9442543647fd4780a46}} 
+\mbox{\hyperlink{classsf_1_1_render_window}{sf\+::\+Render\+Window}} \& {\bfseries get\+Window} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_display_ab9620fdaa04fc2a42378b13c881a94c9}\label{class_my_display_ab9620fdaa04fc2a42378b13c881a94c9}} 
+\index{MyDisplay@{MyDisplay}!eventQueue@{eventQueue}}
+\index{eventQueue@{eventQueue}!MyDisplay@{MyDisplay}}
+\doxysubsubsection{\texorpdfstring{eventQueue()}{eventQueue()}}
+{\footnotesize\ttfamily std\+::queue$<$input\+\_\+key$>$\& My\+Display\+::event\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return a queue of all the key pressed event 
+
+\begin{DoxyReturn}{Returns}
+std\+::queue$<$input\+\_\+key$>$\& queue of all the key pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_display_a23aff4f6b5abdcb4c72b7fc58a9cf02f}\label{class_my_display_a23aff4f6b5abdcb4c72b7fc58a9cf02f}} 
+\index{MyDisplay@{MyDisplay}!ite@{ite}}
+\index{ite@{ite}!MyDisplay@{MyDisplay}}
+\doxysubsubsection{\texorpdfstring{ite()}{ite()}}
+{\footnotesize\ttfamily void My\+Display\+::ite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classregistry}{registry}} \&}]{\+\_\+regis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+takes a registry, and draws, iteration by iteration any object that are to be drawn should pocess at least\+: 
+
+
+\begin{DoxyItemize}
+\item a \mbox{\hyperlink{structdrawable__s}{drawable\+\_\+s}} component
+\item a \mbox{\hyperlink{structposition__s}{position\+\_\+s}} component
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+regis} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/\+SFML/My\+Display.\+hpp\end{DoxyCompactItemize}

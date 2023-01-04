@@ -1,0 +1,237 @@
+\hypertarget{class_handle_uuid}{}\doxysection{Handle\+Uuid$<$ Data\+Type $>$ Class Template Reference}
+\label{class_handle_uuid}\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+
+
+Data Type.  
+
+
+
+
+{\ttfamily \#include $<$Handle\+Uuid.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_handle_uuid_ab797c0de2ca657ef42f7ff7c2cb608c5}{Set\+Data\+On\+Queu\+By\+Usr\+Uuid}} (Data\+Type \&p, const uuid\+\_\+t \&uuid, \mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&e)
+\begin{DoxyCompactList}\small\item\em Set the Data On Queu By Usr \mbox{\hyperlink{class_uuid}{Uuid}} object. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_handle_uuid_ac12dbd2d726515e8b2f3a270c9c7037c}{Get\+Number\+Active\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Get the Number Active Queue object. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ Data\+Type $>$ $>$ \mbox{\hyperlink{class_handle_uuid_ab9dbf2fecd3c9ba90544e3e229854ef0}{Create\+Queu}} (uuid\+\_\+t \&uuid, size\+\_\+t \&index)
+\begin{DoxyCompactList}\small\item\em Create a Queu object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_handle_uuid_a7f22d0d8bf5d7818b6c502be978054fc}{Get\+Number\+Uuid\+In\+This\+Queu}} (const uuid\+\_\+t \&Lobby\+Uuid) const
+\begin{DoxyCompactList}\small\item\em Get the Number \mbox{\hyperlink{class_uuid}{Uuid}} In This Queu object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_handle_uuid_a7f1e645ad23622b0c7f18f30ee939d76}{\+\_\+\+\_\+\+Get\+Uuid\+Of\+Fist\+Lobby}} (uuid\+\_\+t \&Lobby\+Uuid)
+\begin{DoxyCompactList}\small\item\em Get the uuid of the fist lobby. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_handle_uuid_a2f77797772d697b203f583939e932e06}{Add\+This\+Usr\+To\+That\+Uuid\+Queu\+Lobby}} (const uuid\+\_\+t \&Lobby\+Uuid, uuid\+\_\+t \&Usr\+Uuid, const struct sockaddr\+\_\+in \&addr, bool Lock)
+\begin{DoxyCompactList}\small\item\em Add This usr to that uuid lobby. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_handle_uuid_a3a0f9aaaeb7d3865320650bff5b475cd}{Send\+Packet\+To\+All\+User\+Lobby}} (int Socket\+Server, const uuid\+\_\+t \&Lobby\+Uuid, Data\+Type \&Packet)
+\begin{DoxyCompactList}\small\item\em Send packet to all usr on Lobby\+Uuid. \end{DoxyCompactList}\item 
+std\+::pair$<$ std\+::mutex $\ast$, std\+::vector$<$ \mbox{\hyperlink{class_uuid}{Uuid}} $>$ $\ast$ $>$ \mbox{\hyperlink{class_handle_uuid_a50e9a0afe8475f67dcd02f0101249452}{Get\+All\+Urs\+By\+Thread}} (uuid\+\_\+t \&Lobby\+Uuid)
+\begin{DoxyCompactList}\small\item\em Get the All Urs By Thread object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_uuid}{Uuid}}, size\+\_\+t $>$ $>$ \mbox{\hyperlink{class_handle_uuid_a7cc16ffcb05623c5aafdefd023a1e709}{Get\+All\+Uuid\+Activate\+Lobby}} ()
+\begin{DoxyCompactList}\small\item\em Get the All \mbox{\hyperlink{class_uuid}{Uuid}} Activate \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Data\+Type$>$\newline
+class Handle\+Uuid$<$ Data\+Type $>$}
+
+Data Type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Data\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_handle_uuid_a7f1e645ad23622b0c7f18f30ee939d76}\label{class_handle_uuid_a7f1e645ad23622b0c7f18f30ee939d76}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!\_\_GetUuidOfFistLobby@{\_\_GetUuidOfFistLobby}}
+\index{\_\_GetUuidOfFistLobby@{\_\_GetUuidOfFistLobby}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{\_\_GetUuidOfFistLobby()}{\_\_GetUuidOfFistLobby()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::\+\_\+\+\_\+\+Get\+Uuid\+Of\+Fist\+Lobby (\begin{DoxyParamCaption}\item[{uuid\+\_\+t \&}]{Lobby\+Uuid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the uuid of the fist lobby. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000024}{Deprecated}}]use only if we have only one game \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em Lobby\+Uuid} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_handle_uuid_a2f77797772d697b203f583939e932e06}\label{class_handle_uuid_a2f77797772d697b203f583939e932e06}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!AddThisUsrToThatUuidQueuLobby@{AddThisUsrToThatUuidQueuLobby}}
+\index{AddThisUsrToThatUuidQueuLobby@{AddThisUsrToThatUuidQueuLobby}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{AddThisUsrToThatUuidQueuLobby()}{AddThisUsrToThatUuidQueuLobby()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Add\+This\+Usr\+To\+That\+Uuid\+Queu\+Lobby (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{Lobby\+Uuid,  }\item[{uuid\+\_\+t \&}]{Usr\+Uuid,  }\item[{const struct sockaddr\+\_\+in \&}]{addr,  }\item[{bool}]{Lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add This usr to that uuid lobby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lobby\+Uuid} & \\
+\hline
+{\em Usr\+Uuid} & \\
+\hline
+{\em addr} & \\
+\hline
+{\em Lock} & If true the mutex will be locked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_ab9dbf2fecd3c9ba90544e3e229854ef0}\label{class_handle_uuid_ab9dbf2fecd3c9ba90544e3e229854ef0}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!CreateQueu@{CreateQueu}}
+\index{CreateQueu@{CreateQueu}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{CreateQueu()}{CreateQueu()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$Data\+Type$>$ $>$ \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Create\+Queu (\begin{DoxyParamCaption}\item[{uuid\+\_\+t \&}]{uuid,  }\item[{size\+\_\+t \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a Queu object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & \\
+\hline
+{\em index} & the index of the queue in the tab if the index $<$ nb total queues the queue is re-\/use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$One\+Queu$<$\+Data\+Type$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_a50e9a0afe8475f67dcd02f0101249452}\label{class_handle_uuid_a50e9a0afe8475f67dcd02f0101249452}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!GetAllUrsByThread@{GetAllUrsByThread}}
+\index{GetAllUrsByThread@{GetAllUrsByThread}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetAllUrsByThread()}{GetAllUrsByThread()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::pair$<$std\+::mutex $\ast$, std\+::vector$<$\mbox{\hyperlink{class_uuid}{Uuid}}$>$ $\ast$$>$ \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Get\+All\+Urs\+By\+Thread (\begin{DoxyParamCaption}\item[{uuid\+\_\+t \&}]{Lobby\+Uuid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the All Urs By Thread object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lobby\+Uuid} & the lobby to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$std\+::mutex $\ast$, std\+::vector$<$\+Uuid$>$ $\ast$$>$ the mutex of the lobby and all urs of this lobby 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_a7cc16ffcb05623c5aafdefd023a1e709}\label{class_handle_uuid_a7cc16ffcb05623c5aafdefd023a1e709}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!GetAllUuidActivateLobby@{GetAllUuidActivateLobby}}
+\index{GetAllUuidActivateLobby@{GetAllUuidActivateLobby}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetAllUuidActivateLobby()}{GetAllUuidActivateLobby()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::vector$<$std\+::pair$<$\mbox{\hyperlink{class_uuid}{Uuid}}, size\+\_\+t$>$ $>$ \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Get\+All\+Uuid\+Activate\+Lobby (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the All \mbox{\hyperlink{class_uuid}{Uuid}} Activate \mbox{\hyperlink{class_lobby}{Lobby}} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::pair$<$\+Uuid, size\+\_\+t$>$$>$ \mbox{\hyperlink{class_uuid}{Uuid}} Of the use lobby and is index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_ac12dbd2d726515e8b2f3a270c9c7037c}\label{class_handle_uuid_ac12dbd2d726515e8b2f3a270c9c7037c}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!GetNumberActiveQueue@{GetNumberActiveQueue}}
+\index{GetNumberActiveQueue@{GetNumberActiveQueue}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetNumberActiveQueue()}{GetNumberActiveQueue()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Get\+Number\+Active\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Number Active Queue object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_a7f22d0d8bf5d7818b6c502be978054fc}\label{class_handle_uuid_a7f22d0d8bf5d7818b6c502be978054fc}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!GetNumberUuidInThisQueu@{GetNumberUuidInThisQueu}}
+\index{GetNumberUuidInThisQueu@{GetNumberUuidInThisQueu}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{GetNumberUuidInThisQueu()}{GetNumberUuidInThisQueu()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+int \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Get\+Number\+Uuid\+In\+This\+Queu (\begin{DoxyParamCaption}\item[{const uuid\+\_\+t \&}]{Lobby\+Uuid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Number \mbox{\hyperlink{class_uuid}{Uuid}} In This Queu object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lobby\+Uuid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+
+-\/1 \mbox{\hyperlink{class_lobby}{Lobby}} Don\textquotesingle{}t exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_a3a0f9aaaeb7d3865320650bff5b475cd}\label{class_handle_uuid_a3a0f9aaaeb7d3865320650bff5b475cd}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!SendPacketToAllUserLobby@{SendPacketToAllUserLobby}}
+\index{SendPacketToAllUserLobby@{SendPacketToAllUserLobby}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacketToAllUserLobby()}{SendPacketToAllUserLobby()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Send\+Packet\+To\+All\+User\+Lobby (\begin{DoxyParamCaption}\item[{int}]{Socket\+Server,  }\item[{const uuid\+\_\+t \&}]{Lobby\+Uuid,  }\item[{Data\+Type \&}]{Packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send packet to all usr on Lobby\+Uuid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Socket\+Server} & \\
+\hline
+{\em Lobby\+Uuid} & \\
+\hline
+{\em Packet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_handle_uuid_ab797c0de2ca657ef42f7ff7c2cb608c5}\label{class_handle_uuid_ab797c0de2ca657ef42f7ff7c2cb608c5}} 
+\index{HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}!SetDataOnQueuByUsrUuid@{SetDataOnQueuByUsrUuid}}
+\index{SetDataOnQueuByUsrUuid@{SetDataOnQueuByUsrUuid}!HandleUuid$<$ DataType $>$@{HandleUuid$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SetDataOnQueuByUsrUuid()}{SetDataOnQueuByUsrUuid()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+bool \mbox{\hyperlink{class_handle_uuid}{Handle\+Uuid}}$<$ Data\+Type $>$\+::Set\+Data\+On\+Queu\+By\+Usr\+Uuid (\begin{DoxyParamCaption}\item[{Data\+Type \&}]{p,  }\item[{const uuid\+\_\+t \&}]{uuid,  }\item[{\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Data On Queu By Usr \mbox{\hyperlink{class_uuid}{Uuid}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em uuid} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/Handle\+Uuid.\+hpp\end{DoxyCompactItemize}

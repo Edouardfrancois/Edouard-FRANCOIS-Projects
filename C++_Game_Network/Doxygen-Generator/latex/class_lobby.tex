@@ -1,0 +1,90 @@
+\hypertarget{class_lobby}{}\doxysection{Lobby Class Reference}
+\label{class_lobby}\index{Lobby@{Lobby}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lobby_a3fc30a3d56a74960d6980ba5675fd1fb}\label{class_lobby_a3fc30a3d56a74960d6980ba5675fd1fb}} 
+void \mbox{\hyperlink{class_lobby_a3fc30a3d56a74960d6980ba5675fd1fb}{\+\_\+\+Register\+Handlers\+Network\+Func}} ()
+\begin{DoxyCompactList}\small\item\em Register All Network Function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lobby_adb7cc22e3dea15df90b8c45405fdbaa0}{Lobby}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&Send)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lobby_adcd640fd732073c1761edcc874fb89a8}\label{class_lobby_adcd640fd732073c1761edcc874fb89a8}} 
+\mbox{\hyperlink{class_lobby_adcd640fd732073c1761edcc874fb89a8}{$\sim$\+Lobby}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lobby_a83b9b04cb23fd1061fb44c0dd4739385}{Run}} (bool \&in\+\_\+looby, \mbox{\hyperlink{class_my_display}{My\+Display}} \&disp, uuid\+\_\+t \&my\+\_\+uuid)
+\begin{DoxyCompactList}\small\item\em Run 1 time the lobby. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lobby_aac1485776be2f56d3b61b6de56886868}\label{class_lobby_aac1485776be2f56d3b61b6de56886868}} 
+void \mbox{\hyperlink{class_lobby_aac1485776be2f56d3b61b6de56886868}{init}} ()
+\begin{DoxyCompactList}\small\item\em init lobby entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lobby_ad37e57a29d3ee2d26bc7d7c92dd5f238}{Manage\+Packet}} (const \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} \&Packet)
+\begin{DoxyCompactList}\small\item\em If a packet is received this function is called. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lobby_a860cf45a4727a6f6839ff2395516f53d}\label{class_lobby_a860cf45a4727a6f6839ff2395516f53d}} 
+{\bfseries Lobby} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_one_queu}{One\+Queu}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&\+\_\+\+My\+Queu, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&Send, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classutils_1_1_safe_queue}{utils\+::\+Safe\+Queue}}$<$ std\+::variant$<$ \mbox{\hyperlink{class_uuid}{Uuid}}, \mbox{\hyperlink{struct_lobby_stop}{Lobby\+Stop}} $>$$>$$>$ \&\+\_\+\+Usr\+Go\+Back\+Main\+Lobby, std\+::shared\+\_\+ptr$<$ std\+::condition\+\_\+variable $>$ Cv)
+\item 
+\mbox{\Hypertarget{class_lobby_a69ad44bad7467659ac3f4d3d480003af}\label{class_lobby_a69ad44bad7467659ac3f4d3d480003af}} 
+void \mbox{\hyperlink{class_lobby_a69ad44bad7467659ac3f4d3d480003af}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Run The \mbox{\hyperlink{class_lobby}{Lobby}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_lobby_adcd640fd732073c1761edcc874fb89a8}\label{class_lobby_adcd640fd732073c1761edcc874fb89a8}} 
+\mbox{\hyperlink{class_lobby_adcd640fd732073c1761edcc874fb89a8}{$\sim$\+Lobby}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_lobby}{Lobby}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lobby_adb7cc22e3dea15df90b8c45405fdbaa0}\label{class_lobby_adb7cc22e3dea15df90b8c45405fdbaa0}} 
+\index{Lobby@{Lobby}!Lobby@{Lobby}}
+\index{Lobby@{Lobby}!Lobby@{Lobby}}
+\doxysubsubsection{\texorpdfstring{Lobby()}{Lobby()}}
+{\footnotesize\ttfamily Lobby\+::\+Lobby (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} $>$$>$ \&}]{Send }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_lobby}{Lobby}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Send} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lobby_ad37e57a29d3ee2d26bc7d7c92dd5f238}\label{class_lobby_ad37e57a29d3ee2d26bc7d7c92dd5f238}} 
+\index{Lobby@{Lobby}!ManagePacket@{ManagePacket}}
+\index{ManagePacket@{ManagePacket}!Lobby@{Lobby}}
+\doxysubsubsection{\texorpdfstring{ManagePacket()}{ManagePacket()}}
+{\footnotesize\ttfamily void Lobby\+::\+Manage\+Packet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpacket__t}{packet\+\_\+t}} \&}]{Packet }\end{DoxyParamCaption})}
+
+
+
+If a packet is received this function is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Packet} & the packet from the server \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lobby_a83b9b04cb23fd1061fb44c0dd4739385}\label{class_lobby_a83b9b04cb23fd1061fb44c0dd4739385}} 
+\index{Lobby@{Lobby}!Run@{Run}}
+\index{Run@{Run}!Lobby@{Lobby}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Lobby\+::\+Run (\begin{DoxyParamCaption}\item[{bool \&}]{in\+\_\+looby,  }\item[{\mbox{\hyperlink{class_my_display}{My\+Display}} \&}]{disp,  }\item[{uuid\+\_\+t \&}]{my\+\_\+uuid }\end{DoxyParamCaption})}
+
+
+
+Run 1 time the lobby. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+looby} & if true le lobby stop and game start \\
+\hline
+{\em disp} & display struct \\
+\hline
+{\em my\+\_\+uuid} & uuid of the player \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/client/include/Lobby.\+hpp\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/client/src/Lobby.\+cpp\end{DoxyCompactItemize}

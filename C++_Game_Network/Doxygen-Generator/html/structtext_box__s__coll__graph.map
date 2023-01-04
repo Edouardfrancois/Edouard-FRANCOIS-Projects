@@ -1,0 +1,9 @@
+<map id="textBox_s" name="textBox_s">
+<area shape="rect" id="node1" title=" " alt="" coords="236,291,323,317"/>
+<area shape="rect" id="node2" href="$classsf_1_1_string.html" title="Utility string class that automatically handles conversions between types and encodings." alt="" coords="5,134,84,161"/>
+<area shape="rect" id="node3" href="$classsf_1_1_color.html" title="Utility class for manipulating RGBA colors." alt="" coords="109,134,183,161"/>
+<area shape="rect" id="node4" href="$classsf_1_1_font.html" title="Class for loading and manipulating character fonts." alt="" coords="309,134,378,161"/>
+<area shape="rect" id="node5" href="$classsf_1_1_text.html" title="Graphical text that can be drawn to a render target." alt="" coords="403,134,471,161"/>
+<area shape="rect" id="node6" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="315,5,417,32"/>
+<area shape="rect" id="node7" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="441,5,576,32"/>
+</map>

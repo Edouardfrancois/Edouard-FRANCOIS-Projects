@@ -1,0 +1,139 @@
+\hypertarget{class_networks_1_1_client}{}\doxysection{Networks\+::Client Class Reference}
+\label{class_networks_1_1_client}\index{Networks::Client@{Networks::Client}}
+
+
+Inheritance diagram for Networks\+::Client\+:
+% FIG 0
+
+
+Collaboration diagram for Networks\+::Client\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_networks_1_1_client_abef9abfcf7fcaf032d37ee788939662c}{Client}} (int domain=AF\+\_\+\+INET, int type=SOCK\+\_\+\+STREAM, int protocol=0)
+\begin{DoxyCompactList}\small\item\em Construct a new Networks\+:\+: \mbox{\hyperlink{class_networks_1_1_client}{Client}}\+:\+: \mbox{\hyperlink{class_networks_1_1_client}{Client}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_networks_1_1_client_a27882abe8bf77af1910388c2db955969}\label{class_networks_1_1_client_a27882abe8bf77af1910388c2db955969}} 
+\mbox{\hyperlink{class_networks_1_1_client_a27882abe8bf77af1910388c2db955969}{$\sim$\+Client}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_networks_1_1_client}{Client}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_networks_1_1_client_adf2aeef68c25f307b102acc2bb5a46e9}{Connect\+Serveur}} (const std\+::string addr, const int port)
+\begin{DoxyCompactList}\small\item\em Connect to a remote server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_networks_1_1_client_a05c7846ef0bdf017d6e510b0d405e47c}{Connect\+Internal\+Serveur}} ()
+\begin{DoxyCompactList}\small\item\em Connect to a intern server. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Packet\+Type $>$ }\\void \mbox{\hyperlink{class_networks_1_1_client_ad1972ff8a1648208fc1fffc0f2090137}{Send\+Packet}} (const Packet\+Type \&packet)
+\begin{DoxyCompactList}\small\item\em Send a packet to the server. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename P $>$ }\\P \mbox{\hyperlink{class_networks_1_1_client_a60b9aed255706e6687195f4eab3d7226}{Select}} ()
+\begin{DoxyCompactList}\small\item\em Lisen from server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_networks_1_1_client_abef9abfcf7fcaf032d37ee788939662c}\label{class_networks_1_1_client_abef9abfcf7fcaf032d37ee788939662c}} 
+\index{Networks::Client@{Networks::Client}!Client@{Client}}
+\index{Client@{Client}!Networks::Client@{Networks::Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Networks\+::\+Client\+::\+Client (\begin{DoxyParamCaption}\item[{int}]{domain = {\ttfamily AF\+\_\+INET},  }\item[{int}]{type = {\ttfamily SOCK\+\_\+STREAM},  }\item[{int}]{protocol = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Networks\+:\+: \mbox{\hyperlink{class_networks_1_1_client}{Client}}\+:\+: \mbox{\hyperlink{class_networks_1_1_client}{Client}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & \\
+\hline
+{\em type} & \\
+\hline
+{\em protocol} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_networks_1_1_client_a05c7846ef0bdf017d6e510b0d405e47c}\label{class_networks_1_1_client_a05c7846ef0bdf017d6e510b0d405e47c}} 
+\index{Networks::Client@{Networks::Client}!ConnectInternalServeur@{ConnectInternalServeur}}
+\index{ConnectInternalServeur@{ConnectInternalServeur}!Networks::Client@{Networks::Client}}
+\doxysubsubsection{\texorpdfstring{ConnectInternalServeur()}{ConnectInternalServeur()}}
+{\footnotesize\ttfamily void Networks\+::\+Client\+::\+Connect\+Internal\+Serveur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connect to a intern server. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_impossible_to_connect}{Socket\+Exeption\+::\+Impossible\+To\+Connect}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_networks_1_1_client_adf2aeef68c25f307b102acc2bb5a46e9}\label{class_networks_1_1_client_adf2aeef68c25f307b102acc2bb5a46e9}} 
+\index{Networks::Client@{Networks::Client}!ConnectServeur@{ConnectServeur}}
+\index{ConnectServeur@{ConnectServeur}!Networks::Client@{Networks::Client}}
+\doxysubsubsection{\texorpdfstring{ConnectServeur()}{ConnectServeur()}}
+{\footnotesize\ttfamily void Networks\+::\+Client\+::\+Connect\+Serveur (\begin{DoxyParamCaption}\item[{const std\+::string}]{addr,  }\item[{const int}]{port }\end{DoxyParamCaption})}
+
+
+
+Connect to a remote server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & address \\
+\hline
+{\em port} & port \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_impossible_to_connect}{Socket\+Exeption\+::\+Impossible\+To\+Connect}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_networks_1_1_client_a60b9aed255706e6687195f4eab3d7226}\label{class_networks_1_1_client_a60b9aed255706e6687195f4eab3d7226}} 
+\index{Networks::Client@{Networks::Client}!Select@{Select}}
+\index{Select@{Select}!Networks::Client@{Networks::Client}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily template$<$typename P $>$ \\
+P Networks\+::\+Client\+::\+Select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lisen from server. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em P} & packet type \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+P packet type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_networks_1_1_client_ad1972ff8a1648208fc1fffc0f2090137}\label{class_networks_1_1_client_ad1972ff8a1648208fc1fffc0f2090137}} 
+\index{Networks::Client@{Networks::Client}!SendPacket@{SendPacket}}
+\index{SendPacket@{SendPacket}!Networks::Client@{Networks::Client}}
+\doxysubsubsection{\texorpdfstring{SendPacket()}{SendPacket()}}
+{\footnotesize\ttfamily template$<$typename Packet\+Type $>$ \\
+void Networks\+::\+Client\+::\+Send\+Packet (\begin{DoxyParamCaption}\item[{const Packet\+Type \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a packet to the server. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Packet\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_send_error}{Socket\+Exeption\+::\+Send\+Error}}} & error during sending \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/include/Client.\+hpp\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/src/Client.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{class_networks_1_1_serveur}{}\doxysection{Networks\+::Serveur Class Reference}
+\label{class_networks_1_1_serveur}\index{Networks::Serveur@{Networks::Serveur}}
+
+
+Inheritance diagram for Networks\+::Serveur\+:
+% FIG 0
+
+
+Collaboration diagram for Networks\+::Serveur\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_networks_1_1_serveur_ad76bd69be2afb6861bd8de0a74820052}{Serveur}} (int domain=AF\+\_\+\+INET, int type=SOCK\+\_\+\+STREAM, int protocol=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_networks_1_1_serveur_a9780e42ed1c0c4364ae3491a7e3ac929}{$\sim$\+Serveur}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_networks_1_1_serveur_abbf86fca16b99885220f4eefbd13d4c8}{Set\+Port\+Serveur}} (int port)
+\begin{DoxyCompactList}\small\item\em Bing the serveur to a specific port {\itshape if} the port is allready used, the port will be automatically change to port + 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_networks_1_1_serveur_a7974c40b0704d0dd0acf7ce760503faa}{Set\+Intern\+Serveur}} ()
+\begin{DoxyCompactList}\small\item\em Set a intern machine server. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_networks_1_1_serveur_ad21d83e8c132dd59c87f121e6b621ffc}{Get\+Serveur\+Socket}} () const
+\begin{DoxyCompactList}\small\item\em Get the Socket of the server. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Packet\+Type $>$ }\\void \mbox{\hyperlink{class_networks_1_1_serveur_ada89382a2eb2f6472eb2e610ef9ceaa0}{Send\+Packet}} (const int socket, const Packet\+Type \&packet)
+\begin{DoxyCompactList}\small\item\em Send a packet to a client. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename P $>$ }\\P \mbox{\hyperlink{class_networks_1_1_serveur_a6e6ab54d1704ccdc5e1bbc52209895ff}{Select}} (\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&e)
+\begin{DoxyCompactList}\small\item\em Manage packet from the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_networks_1_1_serveur_ad76bd69be2afb6861bd8de0a74820052}\label{class_networks_1_1_serveur_ad76bd69be2afb6861bd8de0a74820052}} 
+\index{Networks::Serveur@{Networks::Serveur}!Serveur@{Serveur}}
+\index{Serveur@{Serveur}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{Serveur()}{Serveur()}}
+{\footnotesize\ttfamily Networks\+::\+Serveur\+::\+Serveur (\begin{DoxyParamCaption}\item[{int}]{domain = {\ttfamily AF\+\_\+INET},  }\item[{int}]{type = {\ttfamily SOCK\+\_\+STREAM},  }\item[{int}]{protocol = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & \\
+\hline
+{\em type} & \\
+\hline
+{\em protocol} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_networks_1_1_serveur_a9780e42ed1c0c4364ae3491a7e3ac929}\label{class_networks_1_1_serveur_a9780e42ed1c0c4364ae3491a7e3ac929}} 
+\index{Networks::Serveur@{Networks::Serveur}!````~Serveur@{$\sim$Serveur}}
+\index{````~Serveur@{$\sim$Serveur}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{$\sim$Serveur()}{~Serveur()}}
+{\footnotesize\ttfamily Networks\+::\+Serveur\+::$\sim$\+Serveur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}} object. 
+
+Destroy the Networks\+:\+: \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}}\+:\+: \mbox{\hyperlink{class_networks_1_1_serveur}{Serveur}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_networks_1_1_serveur_ad21d83e8c132dd59c87f121e6b621ffc}\label{class_networks_1_1_serveur_ad21d83e8c132dd59c87f121e6b621ffc}} 
+\index{Networks::Serveur@{Networks::Serveur}!GetServeurSocket@{GetServeurSocket}}
+\index{GetServeurSocket@{GetServeurSocket}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{GetServeurSocket()}{GetServeurSocket()}}
+{\footnotesize\ttfamily int Networks\+::\+Serveur\+::\+Get\+Serveur\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Socket of the server. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_networks_1_1_serveur_a6e6ab54d1704ccdc5e1bbc52209895ff}\label{class_networks_1_1_serveur_a6e6ab54d1704ccdc5e1bbc52209895ff}} 
+\index{Networks::Serveur@{Networks::Serveur}!Select@{Select}}
+\index{Select@{Select}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily template$<$typename P $>$ \\
+P Networks\+::\+Serveur\+::\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Socket\+Event\+\_\+u}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Manage packet from the client. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em P} & the packet type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Networks\+::\+Socket\+Event\+\_\+u \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P the packet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_networks_1_1_serveur_ada89382a2eb2f6472eb2e610ef9ceaa0}\label{class_networks_1_1_serveur_ada89382a2eb2f6472eb2e610ef9ceaa0}} 
+\index{Networks::Serveur@{Networks::Serveur}!SendPacket@{SendPacket}}
+\index{SendPacket@{SendPacket}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{SendPacket()}{SendPacket()}}
+{\footnotesize\ttfamily template$<$typename Packet\+Type $>$ \\
+void Networks\+::\+Serveur\+::\+Send\+Packet (\begin{DoxyParamCaption}\item[{const int}]{socket,  }\item[{const Packet\+Type \&}]{packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a packet to a client. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Packet\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_send_error}{Socket\+Exeption\+::\+Send\+Error}}} & Error during sending \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_networks_1_1_serveur_a7974c40b0704d0dd0acf7ce760503faa}\label{class_networks_1_1_serveur_a7974c40b0704d0dd0acf7ce760503faa}} 
+\index{Networks::Serveur@{Networks::Serveur}!SetInternServeur@{SetInternServeur}}
+\index{SetInternServeur@{SetInternServeur}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{SetInternServeur()}{SetInternServeur()}}
+{\footnotesize\ttfamily void Networks\+::\+Serveur\+::\+Set\+Intern\+Serveur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set a intern machine server. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_bind_error}{Socket\+Exeption\+::\+Bind\+Error}}} & impossible to bind to this port \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_networks_1_1_serveur_abbf86fca16b99885220f4eefbd13d4c8}\label{class_networks_1_1_serveur_abbf86fca16b99885220f4eefbd13d4c8}} 
+\index{Networks::Serveur@{Networks::Serveur}!SetPortServeur@{SetPortServeur}}
+\index{SetPortServeur@{SetPortServeur}!Networks::Serveur@{Networks::Serveur}}
+\doxysubsubsection{\texorpdfstring{SetPortServeur()}{SetPortServeur()}}
+{\footnotesize\ttfamily void Networks\+::\+Serveur\+::\+Set\+Port\+Serveur (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Bing the serveur to a specific port {\itshape if} the port is allready used, the port will be automatically change to port + 1. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_port_protected}{Socket\+Exeption\+::\+Port\+Protected}}} & Impossible to bind to this port \\
+\hline
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_bind_error}{Socket\+Exeption\+::\+Bind\+Error}}} & impossible to bind to this port \\
+\hline
+{\em \mbox{\hyperlink{class_socket_exeption_1_1_port_change}{Socket\+Exeption\+::\+Port\+Change}}} & the port was change \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & the port \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/include/Serveur.\+hpp\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/src/Serveur.\+cpp\end{DoxyCompactItemize}

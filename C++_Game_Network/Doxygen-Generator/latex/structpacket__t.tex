@@ -1,0 +1,155 @@
+\hypertarget{structpacket__t}{}\doxysection{packet\+\_\+t Struct Reference}
+\label{structpacket__t}\index{packet\_t@{packet\_t}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structpacket__t_a7ebdf23c8faaa47cc9b45ddb4e9707ef}\label{structpacket__t_a7ebdf23c8faaa47cc9b45ddb4e9707ef}} 
+enum {\bfseries type\+\_\+e} \{ \newline
+{\bfseries T\+\_\+\+ERROR\+\_\+\+P\+\_\+\+LOBBY\+\_\+\+FULL} = -\/104
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+P\+\_\+\+LOBBY\+\_\+\+DON\+\_\+\+T\+\_\+\+EXIST} = -\/103
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+P\+\_\+\+CANT\+\_\+\+JOIN\+\_\+\+THIS\+\_\+\+LOBBY} = -\/102
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+P\+\_\+\+LOBBY\+\_\+\+ALL\+\_\+\+READY\+\_\+\+EXIST} = -\/101
+, \newline
+{\bfseries T\+\_\+\+ERROR\+\_\+\+P\+\_\+\+MAX\+\_\+\+LOBBY} = -\/100
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+ENTITY\+\_\+\+NOT\+\_\+\+DESTROY} = -\/7
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+IMPOSIBLE\+\_\+\+TO\+\_\+\+STOP\+\_\+\+MOVE} = -\/6
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+IMPOSIBLE\+\_\+\+TO\+\_\+\+MOUVE} = -\/5
+, \newline
+{\bfseries T\+\_\+\+ERROR\+\_\+\+IMPOSIBLE\+\_\+\+TO\+\_\+\+CREATE\+\_\+\+ENTITY} = -\/4
+, {\bfseries T\+\_\+\+ERROR\+\_\+\+UNKNOWN\+\_\+\+ENTITY\+\_\+\+ID} = -\/3
+, {\bfseries T\+\_\+\+ERR0\+R\+\_\+\+LOBBY\+\_\+\+FULL} = -\/2
+, {\bfseries T\+\_\+\+ERROR} = -\/1
+, \newline
+{\bfseries T\+\_\+\+CONNECTION} = 0
+, {\bfseries T\+\_\+\+BEGIN\+\_\+\+GAME} = 1
+, {\bfseries T\+\_\+\+CREATE\+\_\+\+ENTITY} = 2
+, {\bfseries T\+\_\+\+BEGIN\+\_\+\+MOUVE} = 3
+, \newline
+{\bfseries T\+\_\+\+PING\+\_\+\+ENTITY} = 4
+, {\bfseries T\+\_\+\+END\+\_\+\+MOUVE} = 5
+, {\bfseries T\+\_\+\+UUID\+\_\+\+GET\+\_\+\+INFO} = 6
+, {\bfseries T\+\_\+\+UUID\+\_\+\+MABY\+\_\+\+MISS} = 7
+, \newline
+{\bfseries T\+\_\+\+DESTROY\+\_\+\+ENTITY} = 8
+, {\bfseries T\+\_\+\+INVENTORY} = 9
+, {\bfseries T\+\_\+\+USE\+\_\+\+BOOST} = 10
+, {\bfseries T\+\_\+\+END\+\_\+\+GAME} = 11
+, \newline
+{\bfseries T\+\_\+\+RUN\+\_\+\+GAME} = 12
+, {\bfseries T\+\_\+\+UPDATE\+\_\+\+POS\+\_\+\+ENTITY} = 13
+, {\bfseries T\+\_\+\+UPDATE\+\_\+\+LIFE} = 14
+, {\bfseries T\+\_\+\+DONT\+\_\+\+KNOW} = 15
+, \newline
+{\bfseries P\+\_\+\+CREATE\+\_\+\+LOBBY} = 100
+, {\bfseries P\+\_\+\+USR\+\_\+\+JOIN} = 101
+, {\bfseries P\+\_\+\+JOIN\+\_\+\+SUCESS} = 102
+, {\bfseries P\+\_\+\+JOIN\+\_\+\+LOBBY} = 103
+, \newline
+{\bfseries P\+\_\+\+LEAVE\+\_\+\+LOBBY} = 104
+, {\bfseries P\+\_\+\+USR\+\_\+\+LEAVE\+\_\+\+LOBBY} = 105
+, {\bfseries P\+\_\+\+LODDY\+\_\+\+DESTRY} = 106
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structpacket__t_a2d276c60b0f4649e7c7ff12594b2f099}\label{structpacket__t_a2d276c60b0f4649e7c7ff12594b2f099}} 
+uuid\+\_\+t {\bfseries sender\+Uuid}
+\item 
+\mbox{\Hypertarget{structpacket__t_aef6c899b56b06c369ed3739b922ab251}\label{structpacket__t_aef6c899b56b06c369ed3739b922ab251}} 
+uuid\+\_\+t {\bfseries lobby\+Uuid}
+\item 
+\mbox{\Hypertarget{structpacket__t_ace1bbf87345c4eceef36e6e809d7cf1b}\label{structpacket__t_ace1bbf87345c4eceef36e6e809d7cf1b}} 
+uuid\+\_\+t {\bfseries packetuuid}
+\item 
+\mbox{\Hypertarget{structpacket__t_a83bc2c349f44dd37334334d5e1842628}\label{structpacket__t_a83bc2c349f44dd37334334d5e1842628}} 
+enum packet\+\_\+t\+::type\+\_\+e {\bfseries packet\+\_\+type}
+\item 
+\mbox{\Hypertarget{structpacket__t_a799464dc12da9f38a2b7fe0ab2182eef}\label{structpacket__t_a799464dc12da9f38a2b7fe0ab2182eef}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>u\_short {\bfseries id}\\
+\>\>float {\bfseries x}\\
+\>\>float {\bfseries y}\\
+\>\>float {\bfseries Degree}\\
+\>\>float {\bfseries Velocity}\\
+\>\>int {\bfseries life}\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\} {\bfseries create\_entity}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>float {\bfseries Degree}\\
+\>\>u\_short {\bfseries id}\\
+\>\>u\_short {\bfseries x}\\
+\>\>u\_short {\bfseries y}\\
+\>\>u\_short {\bfseries Vx}\\
+\>\>u\_short {\bfseries Vy}\\
+\>\} {\bfseries get\_info}\\
+\>struct \{\\
+\>\>int {\bfseries life}\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\} {\bfseries life}\\
+\>struct \{\\
+\>\>u\_short {\bfseries x}\\
+\>\>u\_short {\bfseries y}\\
+\>\} {\bfseries screen\_size}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>float {\bfseries Degree}\\
+\>\>u\_short {\bfseries Velocity}\\
+\>\} {\bfseries mouve}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>float {\bfseries x}\\
+\>\>float {\bfseries y}\\
+\>\} {\bfseries poss}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>u\_short {\bfseries x}\\
+\>\>u\_short {\bfseries y}\\
+\>\} {\bfseries ping\_entity}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\} {\bfseries maby\_miss}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>u\_short {\bfseries x}\\
+\>\>u\_short {\bfseries y}\\
+\>\} {\bfseries destroy}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>u\_short {\bfseries boots\_id}\\
+\>\>u\_short {\bfseries count}\\
+\>\} {\bfseries iventory}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries entity\_uuid}\\
+\>\>float {\bfseries time\_left}\\
+\>\>u\_short {\bfseries boots\_id}\\
+\>\} {\bfseries use\_boots}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries lobby\_uuid}\\
+\>\>u\_short {\bfseries index}\\
+\>\} {\bfseries list\_lobby}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries usruuid}\\
+\>\>u\_short {\bfseries index}\\
+\>\} {\bfseries lobby\_new\_usr}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries usruuid}\\
+\>\} {\bfseries lobby\_disconned\_usr}\\
+\>struct \{\\
+\>\>uuid\_t {\bfseries lobby\_uuid}\\
+\>\} {\bfseries lobby\_destroy}\\
+\>struct \{\\
+\>\>bool {\bfseries check}\\
+\>\} {\bfseries is\_win}\\
+\} {\bfseries body\_t}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/Packet.\+hpp\end{DoxyCompactItemize}

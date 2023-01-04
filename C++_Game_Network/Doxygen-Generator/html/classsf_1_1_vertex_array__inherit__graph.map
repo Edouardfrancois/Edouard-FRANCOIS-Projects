@@ -1,0 +1,4 @@
+<map id="sf::VertexArray" name="sf::VertexArray">
+<area shape="rect" id="node1" title="Define a set of one or more 2D primitives." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node2" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="13,5,116,32"/>
+</map>

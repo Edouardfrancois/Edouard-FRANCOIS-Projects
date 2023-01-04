@@ -1,0 +1,25 @@
+<map id="sf::NonCopyable" name="sf::NonCopyable">
+<area shape="rect" id="node1" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,401,133,428"/>
+<area shape="rect" id="node2" href="$classsf_1_1_context.html" title="Class holding a valid drawing context." alt="" coords="227,5,319,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_cursor.html" title="Cursor defines the appearance of a system cursor." alt="" coords="231,56,314,83"/>
+<area shape="rect" id="node4" href="$classsf_1_1_file_input_stream.html" title="Implementation of input stream based on a file." alt="" coords="201,107,345,133"/>
+<area shape="rect" id="node5" href="$classsf_1_1_ftp.html" title="A FTP client." alt="" coords="241,157,304,184"/>
+<area shape="rect" id="node6" href="$classsf_1_1_gl_resource_1_1_transient_context_lock.html" title="RAII helper class to temporarily lock an available context for use." alt="" coords="181,209,364,250"/>
+<area shape="rect" id="node7" href="$classsf_1_1_http.html" title="A HTTP client." alt="" coords="238,275,307,301"/>
+<area shape="rect" id="node8" href="$classsf_1_1_input_sound_file.html" title="Provide read access to sound files." alt="" coords="204,325,341,352"/>
+<area shape="rect" id="node9" href="$classsf_1_1_lock.html" title="Automatic wrapper for locking and unlocking mutexes." alt="" coords="237,376,308,403"/>
+<area shape="rect" id="node10" href="$classsf_1_1_mutex.html" title="Blocks concurrent access to shared resources from multiple threads." alt="" coords="231,427,314,453"/>
+<area shape="rect" id="node11" href="$classsf_1_1_output_sound_file.html" title="Provide write access to sound files." alt="" coords="199,477,347,504"/>
+<area shape="rect" id="node12" href="$classsf_1_1_render_target.html" title="Base class for all render targets (window, texture, ...)" alt="" coords="209,528,336,555"/>
+<area shape="rect" id="node15" href="$classsf_1_1_shader.html" title="Shader class (vertex, geometry and fragment)" alt="" coords="229,629,316,656"/>
+<area shape="rect" id="node16" href="$classsf_1_1_socket.html" title="Base class for all the socket types." alt="" coords="231,680,315,707"/>
+<area shape="rect" id="node20" href="$classsf_1_1_thread.html" title="Utility class to manipulate threads." alt="" coords="229,731,316,757"/>
+<area shape="rect" id="node21" href="$classsf_1_1_thread_local.html" title="Defines variables with thread&#45;local storage." alt="" coords="213,781,333,808"/>
+<area shape="rect" id="node23" href="$classsf_1_1_window.html" title="Window that serves as a target for OpenGL rendering." alt="" coords="226,579,319,605"/>
+<area shape="rect" id="node13" href="$classsf_1_1_render_texture.html" title="Target for off&#45;screen 2D rendering into a texture." alt="" coords="433,528,567,555"/>
+<area shape="rect" id="node14" href="$classsf_1_1_render_window.html" title="Window that can serve as a target for 2D drawing." alt="" coords="431,579,569,605"/>
+<area shape="rect" id="node17" href="$classsf_1_1_tcp_listener.html" title="Socket that listens to new TCP connections." alt="" coords="443,629,557,656"/>
+<area shape="rect" id="node18" href="$classsf_1_1_tcp_socket.html" title="Specialized socket using the TCP protocol." alt="" coords="447,680,553,707"/>
+<area shape="rect" id="node19" href="$classsf_1_1_udp_socket.html" title="Specialized socket using the UDP protocol." alt="" coords="445,731,555,757"/>
+<area shape="rect" id="node22" href="$classsf_1_1_thread_local_ptr.html" title="Pointer to a thread&#45;local variable." alt="" coords="412,781,588,808"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="drawable_s" name="drawable_s">
+<area shape="rect" id="node1" title=" " alt="" coords="79,247,175,273"/>
+<area shape="rect" id="node2" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="68,157,187,184"/>
+<area shape="rect" id="node3" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="87,81,168,108"/>
+<area shape="rect" id="node4" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node5" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="132,5,267,32"/>
+</map>

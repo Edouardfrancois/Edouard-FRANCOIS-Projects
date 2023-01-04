@@ -1,0 +1,115 @@
+\hypertarget{classmy_sound_1_1_sound_manager}{}\doxysection{my\+Sound\+::Sound\+Manager Class Reference}
+\label{classmy_sound_1_1_sound_manager}\index{mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_aab32b2c85a0f9c50bcadee23a18c459a}\label{classmy_sound_1_1_sound_manager_aab32b2c85a0f9c50bcadee23a18c459a}} 
+bool {\bfseries init\+SFX} ()
+\item 
+bool \mbox{\hyperlink{classmy_sound_1_1_sound_manager_a769a91009aa01b8af7d81adb4127c306}{load\+\_\+\+Music}} (std\+::string src)
+\begin{DoxyCompactList}\small\item\em pause the music then tries to load a new Music \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_a0f840b32c71d1a782b515af5280524b1}{set\+\_\+\+Music\+Loop}} (bool is\+Looping)
+\begin{DoxyCompactList}\small\item\em Set the Music should loop or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_ab1d7490f2ab65f351040bd636fb50b70}\label{classmy_sound_1_1_sound_manager_ab1d7490f2ab65f351040bd636fb50b70}} 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_ab1d7490f2ab65f351040bd636fb50b70}{play\+\_\+\+Music}} ()
+\begin{DoxyCompactList}\small\item\em play Music \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_a927f954d530685281b1a0579be00db1c}\label{classmy_sound_1_1_sound_manager_a927f954d530685281b1a0579be00db1c}} 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_a927f954d530685281b1a0579be00db1c}{pause\+\_\+\+Music}} ()
+\begin{DoxyCompactList}\small\item\em pause Music \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_afa3d36fa614dc3a1b50fa016e34b28da}{set\+\_\+\+Music\+Volume}} (float vol)
+\begin{DoxyCompactList}\small\item\em Set the Music Volume. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_acaf54137f7c994710b6efb18a0267dbe}\label{classmy_sound_1_1_sound_manager_acaf54137f7c994710b6efb18a0267dbe}} 
+bool {\bfseries play\+Sound} (const my\+Sound\+Type \&selected)
+\item 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_a5fce2157fa0174de02fa956732307ea3}{set\+\_\+\+SFXloop}} (bool islooping)
+\begin{DoxyCompactList}\small\item\em Set if the SFX should loop or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmy_sound_1_1_sound_manager_a671a54c8a311f0d25ff5dc73dd4c312b}{set\+\_\+\+SFXVolume}} (float vol)
+\begin{DoxyCompactList}\small\item\em Set the SFX Volume. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_a769a91009aa01b8af7d81adb4127c306}\label{classmy_sound_1_1_sound_manager_a769a91009aa01b8af7d81adb4127c306}} 
+\index{mySound::SoundManager@{mySound::SoundManager}!load\_Music@{load\_Music}}
+\index{load\_Music@{load\_Music}!mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsubsection{\texorpdfstring{load\_Music()}{load\_Music()}}
+{\footnotesize\ttfamily bool my\+Sound\+::\+Sound\+Manager\+::load\+\_\+\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+pause the music then tries to load a new Music 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfully loaded 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_a0f840b32c71d1a782b515af5280524b1}\label{classmy_sound_1_1_sound_manager_a0f840b32c71d1a782b515af5280524b1}} 
+\index{mySound::SoundManager@{mySound::SoundManager}!set\_MusicLoop@{set\_MusicLoop}}
+\index{set\_MusicLoop@{set\_MusicLoop}!mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsubsection{\texorpdfstring{set\_MusicLoop()}{set\_MusicLoop()}}
+{\footnotesize\ttfamily void my\+Sound\+::\+Sound\+Manager\+::set\+\_\+\+Music\+Loop (\begin{DoxyParamCaption}\item[{bool}]{is\+Looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Music should loop or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Looping} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_afa3d36fa614dc3a1b50fa016e34b28da}\label{classmy_sound_1_1_sound_manager_afa3d36fa614dc3a1b50fa016e34b28da}} 
+\index{mySound::SoundManager@{mySound::SoundManager}!set\_MusicVolume@{set\_MusicVolume}}
+\index{set\_MusicVolume@{set\_MusicVolume}!mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsubsection{\texorpdfstring{set\_MusicVolume()}{set\_MusicVolume()}}
+{\footnotesize\ttfamily void my\+Sound\+::\+Sound\+Manager\+::set\+\_\+\+Music\+Volume (\begin{DoxyParamCaption}\item[{float}]{vol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Music Volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vol} & between 0 -\/ 100 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_a5fce2157fa0174de02fa956732307ea3}\label{classmy_sound_1_1_sound_manager_a5fce2157fa0174de02fa956732307ea3}} 
+\index{mySound::SoundManager@{mySound::SoundManager}!set\_SFXloop@{set\_SFXloop}}
+\index{set\_SFXloop@{set\_SFXloop}!mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsubsection{\texorpdfstring{set\_SFXloop()}{set\_SFXloop()}}
+{\footnotesize\ttfamily void my\+Sound\+::\+Sound\+Manager\+::set\+\_\+\+SFXloop (\begin{DoxyParamCaption}\item[{bool}]{islooping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set if the SFX should loop or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em islooping} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy_sound_1_1_sound_manager_a671a54c8a311f0d25ff5dc73dd4c312b}\label{classmy_sound_1_1_sound_manager_a671a54c8a311f0d25ff5dc73dd4c312b}} 
+\index{mySound::SoundManager@{mySound::SoundManager}!set\_SFXVolume@{set\_SFXVolume}}
+\index{set\_SFXVolume@{set\_SFXVolume}!mySound::SoundManager@{mySound::SoundManager}}
+\doxysubsubsection{\texorpdfstring{set\_SFXVolume()}{set\_SFXVolume()}}
+{\footnotesize\ttfamily void my\+Sound\+::\+Sound\+Manager\+::set\+\_\+\+SFXVolume (\begin{DoxyParamCaption}\item[{float}]{vol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the SFX Volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vol} & between 0 -\/ 100 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/\+SFML/my\+Sound\+Manager.\+hpp\end{DoxyCompactItemize}

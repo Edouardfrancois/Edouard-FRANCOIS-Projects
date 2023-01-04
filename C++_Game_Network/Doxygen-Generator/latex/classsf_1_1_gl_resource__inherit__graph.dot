@@ -1,0 +1,19 @@
+digraph "sf::GlResource"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sf::GlResource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class for classes that require an OpenGL context."];
+  Node1 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node2 [label="sf::Context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_context.html",tooltip="Class holding a valid drawing context."];
+  Node1 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node3 [label="sf::Shader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_shader.html",tooltip="Shader class (vertex, geometry and fragment)"];
+  Node1 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node4 [label="sf::Texture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_texture.html",tooltip="Image living on the graphics card that can be used for drawing."];
+  Node1 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node5 [label="sf::VertexBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_vertex_buffer.html",tooltip="Vertex buffer storage for one or more 2D primitives."];
+  Node1 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid"];
+  Node6 [label="sf::Window",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_window.html",tooltip="Window that serves as a target for OpenGL rendering."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="sf::RenderWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1_render_window.html",tooltip="Window that can serve as a target for 2D drawing."];
+}

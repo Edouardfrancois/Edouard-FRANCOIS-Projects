@@ -1,0 +1,172 @@
+\hypertarget{class_send_packet}{}\doxysection{Send\+Packet$<$ Data\+Type $>$ Class Template Reference}
+\label{class_send_packet}\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_send_packet_aaade659c468cef647ff9855c02ffc30a}\label{class_send_packet_aaade659c468cef647ff9855c02ffc30a}} 
+\mbox{\hyperlink{class_send_packet_aaade659c468cef647ff9855c02ffc30a}{Send\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Send Packet object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_send_packet_a40cbf41749f81843056b753837a11fbc}{Send\+Packet}} (const int Socket, const std\+::string \&\&Addr\+Serveur, const int Port)
+\begin{DoxyCompactList}\small\item\em Construct a new Send Packet object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_send_packet_a19aaf3cef20ec7e5f6190b3d2786dd1a}\label{class_send_packet_a19aaf3cef20ec7e5f6190b3d2786dd1a}} 
+\mbox{\hyperlink{class_send_packet_a19aaf3cef20ec7e5f6190b3d2786dd1a}{$\sim$\+Send\+Packet}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Send Packet object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a3052dade04322e884ccddbe48b18aaa3}{Change\+Port}} (const int New\+Port)
+\begin{DoxyCompactList}\small\item\em Change the port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a1aaa2ca0a9550a03de50bf0ab3bbea8a}{Send\+To}} (Data\+Type \&P)
+\begin{DoxyCompactList}\small\item\em Send a paket to the Socket registered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a1d5140e09d86b41670e31c74a1506660}{Send\+No\+Mutex}} (int Socket\+Serv, sockaddr\+\_\+in \&Addr, Data\+Type \&P)
+\begin{DoxyCompactList}\small\item\em Send a paket to the Socket\+Serv. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a805033fd57196fc7a45cd690aa26d732}{Send\+To}} (const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P)
+\begin{DoxyCompactList}\small\item\em Send a packet using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a2ee2cabed2e004708079501bb812b556}{Send\+To\+No\+Mutex}} (const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P)
+\begin{DoxyCompactList}\small\item\em Send a packet using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}} object but not using mutex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_ac1fe720fdf4c708b069446272b0ae38c}{Send\+To\+Handle\+Error\+No\+Mutex}} (const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P)
+\begin{DoxyCompactList}\small\item\em Send the packet util it is send (no mutex) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_send_packet_a0dfd2c41a3e7cce37b86ff976ceca6b2}{Send\+To\+Handle\+Error}} (const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&P)
+\begin{DoxyCompactList}\small\item\em Send the packet util it is send. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_send_packet_a40cbf41749f81843056b753837a11fbc}\label{class_send_packet_a40cbf41749f81843056b753837a11fbc}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendPacket@{SendPacket}}
+\index{SendPacket@{SendPacket}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendPacket()}{SendPacket()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+\mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::\mbox{\hyperlink{class_send_packet}{Send\+Packet}} (\begin{DoxyParamCaption}\item[{const int}]{Socket,  }\item[{const std\+::string \&\&}]{Addr\+Serveur,  }\item[{const int}]{Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new Send Packet object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Socket} & Socket of the server \\
+\hline
+{\em Addr\+Serveur} & addr of the server \\
+\hline
+{\em Port} & port th send \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_send_packet_a3052dade04322e884ccddbe48b18aaa3}\label{class_send_packet_a3052dade04322e884ccddbe48b18aaa3}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!ChangePort@{ChangePort}}
+\index{ChangePort@{ChangePort}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{ChangePort()}{ChangePort()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Change\+Port (\begin{DoxyParamCaption}\item[{const int}]{New\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change the port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Port} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_a1d5140e09d86b41670e31c74a1506660}\label{class_send_packet_a1d5140e09d86b41670e31c74a1506660}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendNoMutex@{SendNoMutex}}
+\index{SendNoMutex@{SendNoMutex}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendNoMutex()}{SendNoMutex()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+No\+Mutex (\begin{DoxyParamCaption}\item[{int}]{Socket\+Serv,  }\item[{sockaddr\+\_\+in \&}]{Addr,  }\item[{Data\+Type \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a paket to the Socket\+Serv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Socket\+Serv} & \\
+\hline
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_a805033fd57196fc7a45cd690aa26d732}\label{class_send_packet_a805033fd57196fc7a45cd690aa26d732}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendTo@{SendTo}}
+\index{SendTo@{SendTo}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendTo()}{SendTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+To (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a packet using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_a1aaa2ca0a9550a03de50bf0ab3bbea8a}\label{class_send_packet_a1aaa2ca0a9550a03de50bf0ab3bbea8a}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendTo@{SendTo}}
+\index{SendTo@{SendTo}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendTo()}{SendTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+To (\begin{DoxyParamCaption}\item[{Data\+Type \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a paket to the Socket registered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_a0dfd2c41a3e7cce37b86ff976ceca6b2}\label{class_send_packet_a0dfd2c41a3e7cce37b86ff976ceca6b2}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendToHandleError@{SendToHandleError}}
+\index{SendToHandleError@{SendToHandleError}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendToHandleError()}{SendToHandleError()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+To\+Handle\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send the packet util it is send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_ac1fe720fdf4c708b069446272b0ae38c}\label{class_send_packet_ac1fe720fdf4c708b069446272b0ae38c}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendToHandleErrorNoMutex@{SendToHandleErrorNoMutex}}
+\index{SendToHandleErrorNoMutex@{SendToHandleErrorNoMutex}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendToHandleErrorNoMutex()}{SendToHandleErrorNoMutex()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+To\+Handle\+Error\+No\+Mutex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send the packet util it is send (no mutex) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_send_packet_a2ee2cabed2e004708079501bb812b556}\label{class_send_packet_a2ee2cabed2e004708079501bb812b556}} 
+\index{SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}!SendToNoMutex@{SendToNoMutex}}
+\index{SendToNoMutex@{SendToNoMutex}!SendPacket$<$ DataType $>$@{SendPacket$<$ DataType $>$}}
+\doxysubsubsection{\texorpdfstring{SendToNoMutex()}{SendToNoMutex()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type $>$ \\
+void \mbox{\hyperlink{class_send_packet}{Send\+Packet}}$<$ Data\+Type $>$\+::Send\+To\+No\+Mutex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}}$<$ Data\+Type $>$ \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a packet using \mbox{\hyperlink{class_one_packet_queue}{One\+Packet\+Queue}} object but not using mutex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/Send\+Packet.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app:
+    build: ./
+    volumes:
+      - type: bind
+        source: .
+        target: /home/mayeul/Bureau/B-CPP-500-PAR-5-1-rtype-pierre.tran
+    tty: true
+    stdin_open: true
+    ports:
+      - 30000:30000

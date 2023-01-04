@@ -1,0 +1,95 @@
+\hypertarget{class_thread_pool}{}\doxysection{Thread\+Pool Class Reference}
+\label{class_thread_pool}\index{ThreadPool@{ThreadPool}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_thread_pool_ac88cb2948bdf047e0e9a008f88e13dbb}\label{class_thread_pool_ac88cb2948bdf047e0e9a008f88e13dbb}} 
+{\bfseries Thread\+Pool} (bool is\+\_\+detached, bool concurrent\+\_\+modify)
+\item 
+\mbox{\Hypertarget{class_thread_pool_ad9c3b685a61a386ebfbbb3adf594ce53}\label{class_thread_pool_ad9c3b685a61a386ebfbbb3adf594ce53}} 
+{\bfseries Thread\+Pool} (int nb\+Freds, bool is\+\_\+detached, bool concurrent\+\_\+modify)
+\item 
+bool \mbox{\hyperlink{class_thread_pool_a2ce8f41c7f37022b15d56488f8bcc576}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Get the Status of the \mbox{\hyperlink{class_thread_pool}{Thread\+Pool}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Function\+\_\+type $>$ }\\void \mbox{\hyperlink{class_thread_pool_a00da13682c0c84c098ef2fd7fd4576a5}{attribute\+Tasks}} (Function\+\_\+type f)
+\begin{DoxyCompactList}\small\item\em place a task in the queue. lambda version \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Fun\+\_\+type , class... Params$>$ }\\void \mbox{\hyperlink{class_thread_pool_a6db59769809f1c551a5e80469e54f66c}{attribute\+Tasks}} (Fun\+\_\+type f, Params \&\&...tp)
+\begin{DoxyCompactList}\small\item\em place a task in the queue, takes a function name, and its arguments \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_thread_pool_aab3a7d10f4df19982f4e230bf7873b8c}\label{class_thread_pool_aab3a7d10f4df19982f4e230bf7873b8c}} 
+void \mbox{\hyperlink{class_thread_pool_aab3a7d10f4df19982f4e230bf7873b8c}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em gives the order to stop the thread pool \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_thread_pool_a214e4c694fe41bfc42d6f37183947722}\label{class_thread_pool_a214e4c694fe41bfc42d6f37183947722}} 
+static int {\bfseries default\+\_\+n\+\_\+threads} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_thread_pool_a6db59769809f1c551a5e80469e54f66c}\label{class_thread_pool_a6db59769809f1c551a5e80469e54f66c}} 
+\index{ThreadPool@{ThreadPool}!attributeTasks@{attributeTasks}}
+\index{attributeTasks@{attributeTasks}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{attributeTasks()}{attributeTasks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Fun\+\_\+type , class... Params$>$ \\
+void Thread\+Pool\+::attribute\+Tasks (\begin{DoxyParamCaption}\item[{Fun\+\_\+type}]{f,  }\item[{Params \&\&...}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+place a task in the queue, takes a function name, and its arguments 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Function\+\_\+type} & \\
+\hline
+{\em Params} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & function \\
+\hline
+{\em tp} & arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thread_pool_a00da13682c0c84c098ef2fd7fd4576a5}\label{class_thread_pool_a00da13682c0c84c098ef2fd7fd4576a5}} 
+\index{ThreadPool@{ThreadPool}!attributeTasks@{attributeTasks}}
+\index{attributeTasks@{attributeTasks}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{attributeTasks()}{attributeTasks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Function\+\_\+type $>$ \\
+void Thread\+Pool\+::attribute\+Tasks (\begin{DoxyParamCaption}\item[{Function\+\_\+type}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+place a task in the queue. lambda version 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Function\+\_\+type} & template \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & this function accept lambda type functions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thread_pool_a2ce8f41c7f37022b15d56488f8bcc576}\label{class_thread_pool_a2ce8f41c7f37022b15d56488f8bcc576}} 
+\index{ThreadPool@{ThreadPool}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!ThreadPool@{ThreadPool}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily bool Thread\+Pool\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Status of the \mbox{\hyperlink{class_thread_pool}{Thread\+Pool}}. 
+
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s stopped 
+
+false if it\textquotesingle{}s running 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/shared/\+Thread\+Pool/Thread\+Pool.\+hpp\end{DoxyCompactItemize}

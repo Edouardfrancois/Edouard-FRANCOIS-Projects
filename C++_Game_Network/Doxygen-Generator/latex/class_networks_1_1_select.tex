@@ -1,0 +1,65 @@
+\hypertarget{class_networks_1_1_select}{}\doxysection{Networks\+::Select Class Reference}
+\label{class_networks_1_1_select}\index{Networks::Select@{Networks::Select}}
+
+
+Inheritance diagram for Networks\+::Select\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{\+\_\+\+Socket\+Event\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a3faf48f4f567065c3093850ed3e021a6}\label{class_networks_1_1_select_a3faf48f4f567065c3093850ed3e021a6}} 
+enum {\bfseries \+\_\+\+Select\+Event} \{ \newline
+{\bfseries S\+\_\+\+EVENT\+\_\+\+NEW\+\_\+\+CONNECTION}
+, {\bfseries S\+\_\+\+EVENT\+\_\+\+READ}
+, {\bfseries S\+\_\+\+EVENT\+\_\+\+CLOSE}
+, {\bfseries S\+\_\+\+EVENT\+\_\+\+WRITE}
+, \newline
+{\bfseries S\+\_\+\+EVENT\+\_\+\+ERROR}
+ \}
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_af248fc8acd2a60eb9c1212e4aa93e182}\label{class_networks_1_1_select_af248fc8acd2a60eb9c1212e4aa93e182}} 
+typedef struct \mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{Networks\+::\+Select\+::\+\_\+\+Socket\+Event\+\_\+s}} {\bfseries \+\_\+\+Socket\+Event\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a45882b4be465a936a983420fdac1d9c9}\label{class_networks_1_1_select_a45882b4be465a936a983420fdac1d9c9}} 
+{\bfseries Select} (int Socket)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a0d83d126abfe83caa47b96be1aed23d3}\label{class_networks_1_1_select_a0d83d126abfe83caa47b96be1aed23d3}} 
+void {\bfseries \+\_\+\+Reset\+Select\+Data} ()
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a00951906a8938393f4426d15711a3927}\label{class_networks_1_1_select_a00951906a8938393f4426d15711a3927}} 
+void {\bfseries \+\_\+\+Set\+Socket} (const int Socket)
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_af279e9bd9564b9f4b339a46780186a7f}\label{class_networks_1_1_select_af279e9bd9564b9f4b339a46780186a7f}} 
+void {\bfseries \+\_\+\+Remove\+Socket} (const int To\+Remove, const int Socket\+Server)
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_ac7f9904438cf94dde1f791fd5e9cf88d}\label{class_networks_1_1_select_ac7f9904438cf94dde1f791fd5e9cf88d}} 
+\mbox{\hyperlink{struct_networks_1_1_select_1_1___socket_event__s}{\+\_\+\+Socket\+Event\+\_\+t}} {\bfseries \+\_\+\+Get\+Socket\+Event} (const int Socket\+Server) const
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a18f07822b5cf6917dd7b3dc3515b26aa}\label{class_networks_1_1_select_a18f07822b5cf6917dd7b3dc3515b26aa}} 
+fd\+\_\+set $\ast$ {\bfseries \+\_\+\+Get\+Select\+Read} ()
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_a7895570f40473671b2e546e5f3611988}\label{class_networks_1_1_select_a7895570f40473671b2e546e5f3611988}} 
+fd\+\_\+set $\ast$ {\bfseries \+\_\+\+Get\+Select\+Write} ()
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_ab20d06bba4e9ca134476b355912199ca}\label{class_networks_1_1_select_ab20d06bba4e9ca134476b355912199ca}} 
+int {\bfseries \+\_\+\+Get\+Nb\+Fds} () const
+\item 
+\mbox{\Hypertarget{class_networks_1_1_select_ac9728697390defd7d43e8831936c89c1}\label{class_networks_1_1_select_ac9728697390defd7d43e8831936c89c1}} 
+const std\+::vector$<$ int $>$ \& {\bfseries \+\_\+\+Get\+All\+Socket} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Edouard/\+TEK3/\+C++/\+B-\/\+CPP-\/500-\/\+PAR-\/5-\/1-\/rtype-\/pierre.\+tran/src/res/include/Select.\+hpp\end{DoxyCompactItemize}
