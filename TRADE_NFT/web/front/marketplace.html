@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <link rel="icon" href="data:;base64,iVBORwOKGO=">
+        <title>Transphere yours EION's NFTs</title>
+        <link rel="icon" href="./img/eionAppIcon.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to our beatiful MARKETPLACE</h1>
+<!-- ID price -->
+        <h2 id="from">your adress is    : </h2>
+
+        <form class="form-nft" action="/marketplace/submit" name="Add our NFT on the market place" method="post" enctype="application/x-www-form-urlencoded" onsubmit="MyEvent()">
+
+            <div class="mb-3">
+                <label class="form-label">Token ID</label>
+                <input type="number" min="0" name="id" id="id" class="form-control" required>
+                <br/><br/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="number" min="0" name="price" id="price" class="form-control" required>
+                <!-- <button type="submit">Send to backend</button> -->
+                <button class="badge rounded-pill bg-warning text-dark" type="submit" name="NFT_TRANSPHERE" id="NFT_TRANSPHERE">Add to marketplace</button>
+
+            </div>
+        </form>
+        <form action="/listings" method="post" enctype="application/x-www-form-urlencoded" onsubmit="MyEvent2()">
+            <button name="Market" value="upvote">NFT for sale</button>
+        </form>
+        <script type="text/javascript">
+            let correctNetwork = "0x5" // Ethereum Mainnet / Goerli == 0x5 
+            let eventListenersSet = false
+            let account;
+            let network;
+            console.log("script")
+            function getAccount() {
+                console.log("you are in the function getAccount")
+                window.ethereum ?
+                    ethereum.request({method: "eth_requestAccounts"}).then((accounts) => {
+                        account = accounts[0];
+                        if (account)
+                            document.getElementById("from").innerText += account;
+                        ethereum.chainId === correctNetwork ?
+                            console.log("You're on the correct network")
+                                :
+                            ethereum.chainId === "0x5" ?
+                                console.log("Your Network is only for TEST")
+                                    :
+                                console.log("You're on the wrong network")
+                        // Set event listeners
+                        if (!eventListenersSet) {
+                            ethereum.on('accountsChanged', function() {
+                                getAccount()
+                            })
+                            ethereum.on('chainChanged', function() {
+                                getAccount()
+                            })
+                            eventListenersSet = true
+                        }
+                    }).catch((err) => {
+                        console.log(err)
+                    })
+                :(          
+                    console.log("Please install MetaMask"),
+                    document.getElementById("from").innerText += "Please install Metamask"
+                    )
+            }
+            (getAccount)(); 
+
+
+            function MyEvent() {
+                console.log("le serveur à répondue au forms");
+                event.preventDefault();
+                $("#NFT_TRANSPHERE").attr("disabled", true);
+
+                var somejson = { 
+                    'tokenId'      : $('#id').val(),
+                    'price'      : $('#price').val(),
+                    'from'       : account,
+                };
+
+
+                $.ajax({
+                    url         : "http://localhost:3000/marketplace/submit", 
+                    type        : "POST",
+                    cache       : false,
+                    crossDomain : true,
+                    data        : somejson,
+                    //dataType    : "json",
+                    success: function (response) {
+                        console.log("reponse = " + response)
+                        var resp = JSON.parse(JSON.stringify(response));
+                        console.log(resp['transactionParameters']);
+                        let transactionParameters = resp['transactionParameters'];
+                        window.ethereum ?
+                            ethereum.request({method: 'eth_sendTransaction', params: [transactionParameters],}).then((txHash) => {
+                                console.log("OK")
+                            }).catch((err) => console.log("Bad status when call function with metamask." + err.message))
+                        : 
+                            console.log("Please install MetaMask");
+
+                    },
+                });
+            }
+            function MyEvent2() {
+                console.log("event2")
+                $.ajax({
+                    url         : "http://localhost:3000/listings", 
+                    type        : "POST",
+                    cache       : false,
+                    crossDomain : true,
+                    data        : somejson,
+                    success: function (response) {
+                        var resp = JSON.parse(JSON.stringify(response));
+                        console.log("receive listing response");
+                    },
+                    error: function (xhr, status) {
+                        console.log(xhr);
+                        console.log(status);
+                        alert("error sorry my friend");
+                    }
+                });
+            }
+
+
+        </script>
+</body>
+</html>

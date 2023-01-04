@@ -1,0 +1,222 @@
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+                    <!-- <link rel="stylesheet" href="index.css"> -->
+                    <link rel="icon" href="data:;base64,iVBORwOKGO=">
+                    <title>NFT Minter</title>
+                    <link rel="icon" href="./img/eionAppIcon.png" />
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@alch/alchemy-web3@latest/dist/alchemyWeb3.min.js"></script>
+                    <!-- <link rel="stylesheet" href="mystyle.css"> -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                    <script> import bootstrap from 'bootstrap' </script>
+                </head>
+                <body>
+        <nav>
+        <a href="./transphere">TRANSPHERE</a>
+        </nav>
+        <style>
+            body{background-color: rgb(161, 161, 161);}
+            .form-nft{width: 300px;}
+            </style>
+        <div id="THE_NFT" style="float:right;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                            border:5px solid black;">
+            <h1 id="TITLE">WAIT A MINUTE PLEASE</h1>
+            <h3 id="NAME_NFT"></h3>
+            <img id="NFT_IMAGE" src="" width="400" height="auto">
+            <h3 id="AUTHOR_NFT"></h3>
+            <h3 id="DESCRIPTION_NFT"></h3>
+            <a href="@" id="URI_NFT" >click here for view your image on IPFS</a>
+        </div>
+        <div>
+            <h1>NFT Minter</h1>
+            
+            <div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    BlockChain
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Ethereum</a></li>
+                    <li><a class="dropdown-item" href="#">Goerli</a></li>
+                    </ul>
+                </div>
+                <br /><br />
+
+
+            <form class="form-nft" action="http://localhost:3000/upload_ipfs" name="nft-form" method="post" enctype="application/x-www-form-urlencoded" onsubmit="signTransaction()">
+                <div class="mb-3">
+                    <label class="form-label">Author</label>
+                    <input type="text" name="author" id="author" class="form-control" required>
+                    <br/><br/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="img_name" id="img_name" class="form-control" required>
+                    <br/><br/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <input type="text" name="img_desc" id="img_desc" class="form-control" required>
+                    <br/><br/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Royalties</label>
+                    <input type="number" min="0" max="100" placeholder="enter your percentage" name="royalty" id="royalty" class="form-control" required>
+                    <br/><br/>
+                </div>
+
+                <div class="mb-3">
+                <label>Path</label>
+                <input type="text" name="img_path" id="img_path" class="form-control" required>
+                    <br/>
+                      <div class="card" style="width: 18rem;">
+                        <img src="eionAppIcon.png" class="card-img-top" id="nft_picture" alt="Your nft">
+                        <div class="card-body">
+                          <p class="card-text">NFT</p>
+                        </div>
+                      </div>
+                <br/><br/>
+                </div>
+
+                <div class="mb-3">
+                    <label>Metamask Address Account</label>
+                    <input type="text" name="user_address" id="user_address" required>
+                    <button class="badge rounded-pill bg-warning text-dark" type="submit" name="NFT-create" id="NFT-create">Create NFT</button>
+                </div>        
+            </form>
+            <p id="status"></p> <a href="goog.com" id="status_link"></a>
+            <div id="contr_addr"></div>
+            <div id="tokenURI"></div>
+        </div>
+        <script type="text/javascript">
+            let correctNetwork = "0x5" // 0x1 == Ethereum Mainnet
+            let eventListenersSet = false
+            let account;
+            let network;
+            const nft_div = document.querySelector('#THE_NFT');
+
+            nft_div.style.display = 'none';
+            /**
+            * Fetch the user wallet address using Metamask Global API (window.ethereum)
+            */
+            function getAccount() {
+                var account;
+                window.ethereum ?
+                    ethereum.request({method: "eth_requestAccounts"}).then((accounts) => {
+                        account = accounts[0];
+                        if (account)
+                            document.getElementById("user_address").value = account;
+                        network = ethereum.chainId
+                        network === correctNetwork ?
+                            console.log("You're on the correct network")
+                                :
+                            console.log("You're on the wrong network")
+                        // Set event listeners
+                        if (!eventListenersSet) {
+                            ethereum.on('accountsChanged', function() {
+                                getAccount()
+                            })
+                            ethereum.on('chainChanged', function() {
+                                getAccount()
+                            })
+                            eventListenersSet = true
+                        }
+                    }).catch((err) => console.log(err))
+                : console.log("Please install MetaMask")
+            }
+
+            (getAccount)();
+
+            /**
+            * Get the response JSON made of transaction parameters and needed informations for the user in order to see his NFT
+            */
+            function signTransaction() {
+                event.preventDefault();
+                $("#NFT-create").attr("disabled", true);
+                var somejson = { 
+                                'img_name'      : $('#img_name').val(),
+                                'img_desc'      : $('#img_desc').val(),
+                                'royalty'      : $('#royalty').val(),
+                                'img_path'      : $('#img_path').val(),
+                                'user_address'  : $('#user_address').val(),
+                                'author'  : $('#author').val(),
+                                'contract_address'  : $('#contract_address').val(),
+                                'tokenURI'  : $('#tokenURI').val()
+                        };
+                
+                console.log("before____________________=====================");
+                console.log(somejson);
+                console.log("after____________________=====================");
+
+                $.ajax({
+                        url         : "http://localhost:3000/upload_ipfs", 
+                        type        : "POST",
+                        cache       : false,
+                        crossDomain : true,
+                        data        : somejson,
+                        //dataType    : "json",
+                        success: function (response) {
+                            $("#NFT-create").attr("disabled", false);
+                            console.log(response)
+                            var resp = JSON.parse(JSON.stringify(response));
+                            console.log(resp['transactionParameters']);
+                            let transactionParameters = resp['transactionParameters'];
+                            let contract_address = resp['contractAddress'];
+                            let tokenURI = resp['tokenURI'];
+                            window.ethereum ?
+                                ethereum.request({method: 'eth_sendTransaction', params: [transactionParameters],}).then((txHash) => {
+                                    document.getElementById('status').innerHTML = "Check out your transaction on Etherscan:"; 
+                                    document.getElementById('status_link').innerHTML = "see on Etherscan";
+                                    document.getElementById('status_link').href = "https://"+ "goerli." +".etherscan.io/tx/" + txHash;
+                                    document.getElementById('contr_addr').innerHTML = "contract address to add on Metmask : " + contract_address;
+                                    document.getElementById('tokenURI').innerHTML = "IPFS NFT LINK : " + tokenURI.replace("ipfs://", "https://ipfs.io/ipfs/");
+
+                                    const url_obj = tokenURI.replace("ipfs://", "https://ipfs.io/ipfs/");
+                                    console.log("link ipfs = : " + tokenURI)///edouard
+                                    fetch(url_obj)///edouard <
+                                    .then(res => res.json())
+                                    .then((out) => {
+                                        console.log('Checkout this JSON!&&&&&&&&&&&&&&&&&&&&&&&&& ', out);
+                                        document.getElementById("NFT_IMAGE").src=out.image.replace("ipfs://", "https://ipfs.io/ipfs/");
+                                        document.getElementById("NAME_NFT").innerHTML = "NAME:\t" + out.name;
+                                        document.getElementById("AUTHOR_NFT").innerHTML = "AUTHOR:\t" + out.properties.author;
+                                        document.getElementById("DESCRIPTION_NFT").innerHTML = "DESCRIPTION:\t" + out.description;
+                                        document.getElementById('TITLE').innerHTML = "YOUR NFT :";
+                                        document.getElementById('URI_NFT').href = out.image.replace("ipfs://", "https://ipfs.io/ipfs/");
+                                    })
+                                    .catch(err => { throw err }); /// >
+                                    var divContents = document.getElementById("THE_NFT").innerHTML;
+                                    console.log("PRINT NFT NOW !");
+                                    nft_div.style.display = 'block';                                    
+                                    
+                                }).catch((err) => console.log("Bad status." + err.message))
+                            : console.log("Please install MetaMask");
+                        },
+                        error: function (xhr, status) {
+                            $("#NFT-create").attr("disabled", false);
+                            console.log(xhr);
+                            console.log(status);
+                            alert("error");
+                        }
+                    });
+            }
+        </script>
+        <script>
+            const input = document.querySelector('#img_path')  
+            input.addEventListener('change', (e) => {  
+              console.log(e.target.value);
+              document.getElementById("nft_picture").src=(e.target.value);
+            });
+
+        </script>
+
+    </body>
+</html>
+

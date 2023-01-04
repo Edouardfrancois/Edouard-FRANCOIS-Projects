@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <link rel="icon" href="data:;base64,iVBORwOKGO=">
+        <title>SHOP</title>
+        <link rel="icon" href="./img/eionAppIcon.png" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <button id="btn_update_shop">Update Shop</button>
+        <div id="NFT_Container"></div>
+        <script>
+            let btn_update_shop = document.getElementById("btn_update_shop");
+            let div_NFT = document.getElementById("NFT_Container");
+            let link = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+            
+            btn_update_shop.addEventListener('click', envent => {
+                console.log("OK")
+                axios.post('/listings', {
+                    a: 'Hassan',
+                    b: 7
+                }).then(function (response) {
+                    let uri = response.data.uri;
+                    for (i in response.data.uri) {
+                        console.log("for : " + response.data.uri[i])
+                        let NFT = document.createElement('img');
+                        NFT.alt = 'nft image';
+                        NFT.className += 'nft';
+                        const url_obj = response.data.uri[i].replace("ipfs://", "https://ipfs.io/ipfs/");
+                        fetch(url_obj)///edouard <
+                            .then(res => res.json())
+                            .then((out) => {
+                                NFT.src = out.image.replace("ipfs://", "https://ipfs.io/ipfs/");
+                                console.log("nft.src=" + NFT.src);
+                                //document.getElementById("NAME_NFT").innerHTML = "NAME:\t" + out.name; -->
+                                //document.getElementById("AUTHOR_NFT").innerHTML = "AUTHOR:\t" + out.properties.author; -->
+                                //document.getElementById("DESCRIPTION_NFT").innerHTML = "DESCRIPTION:\t" + out.description; -->
+                                //document.getElementById('TITLE').innerHTML = "YOUR NFT :"; -->
+                                //document.getElementById('URI_NFT').href = out.image.replace("ipfs://", "https://ipfs.io/ipfs/"); -->
+                            })
+                            .catch(err => { throw err }); 
+                        div_NFT.appendChild(NFT)
+                    }
+                    console.log(response.data.uri);
+                }).catch(function (error) {
+                    console.log(error);
+                });
+            });
+        </script>
+    </body>
+</html>
+<!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FImage&psig=AOvVaw3QYpWe10VYjtzQV5gs_791&ust=1671893724668000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJjbns7_j_wCFQAAAAAdAAAAABAE -->
